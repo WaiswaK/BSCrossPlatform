@@ -36,16 +36,81 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Common\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Common\CommonTask.cs" />
+    <Compile Include="Common\Constant.cs" />
+    <Compile Include="Common\Message.cs" />
+    <Compile Include="Common\ObservableDictionary.cs" />
+    <Compile Include="Common\RelayCommand.cs" />
+    <Compile Include="Common\WebViewContentHelper.cs" />
+    <Compile Include="Core\DBInsertionTask.cs" />
+    <Compile Include="Core\DBRetrievalTask.cs" />
+    <Compile Include="Core\ErrorLogTask.cs" />
+    <Compile Include="Core\ImageTask.cs" />
+    <Compile Include="Core\JSONTask.cs" />
+    <Compile Include="Core\NotesTask.cs" />
+    <Compile Include="Core\ModelTask.cs" />
+    <Compile Include="Database\Assignment.cs" />
+    <Compile Include="Database\Attachment.cs" />
+    <Compile Include="Database\Book.cs" />
+    <Compile Include="Database\log.cs" />
+    <Compile Include="Database\School.cs" />
+    <Compile Include="Database\Subject.cs" />
+    <Compile Include="Database\Topic.cs" />
+    <Compile Include="Database\User.cs" />
+    <Compile Include="Database\Video.cs" />
+    <Compile Include="Interfaces\IDatabase.cs" />
+    <Compile Include="Interfaces\ITask.cs" />
+    <Compile Include="Models\AssignmentModel.cs" />
+    <Compile Include="Models\AttachmentModel.cs" />
+    <Compile Include="Models\BookModel.cs" />
+    <Compile Include="Models\CategoryModel.cs" />
+    <Compile Include="Models\FolderModel.cs" />
+    <Compile Include="Models\LibCategoryModel.cs" />
+    <Compile Include="Models\LibraryModel.cs" />
+    <Compile Include="Models\LoginStatus.cs" />
+    <Compile Include="Models\PdfDataItem.cs" />
+    <Compile Include="Models\SchoolModel.cs" />
+    <Compile Include="Models\SubjectModel.cs" />
+    <Compile Include="Models\TopicModel.cs" />
+    <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Models\VideoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\AssignmentPageViewModel.cs" />
+    <Compile Include="ViewModels\CategoryPageViewModel.cs" />
+    <Compile Include="ViewModels\LibraryCategoriesViewModel.cs" />
+    <Compile Include="ViewModels\LibraryCategoryBooksViewModel.cs" />
+    <Compile Include="ViewModels\LoginPageViewModel.cs" />
+    <Compile Include="ViewModels\PlayPageViewModel.cs" />
+    <Compile Include="ViewModels\StudentPageViewModel.cs" />
+    <Compile Include="ViewModels\SubjectPageViewModel.cs" />
+    <Compile Include="ViewModels\TopicPageViewModel.cs" />
+    <Compile Include="ViewModels\TopicsPageViewModel.cs" />
+    <Compile Include="ViewModels\VideosPageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="PCLStorage, Version=1.0.2.0, Culture=neutral, PublicKeyToken=286fe515a2c35b64, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions, Version=1.0.2.0, Culture=neutral, PublicKeyToken=286fe515a2c35b64, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="SQLite.Net, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\SQLite.Net-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCL.raw, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQLitePCL.raw.0.9.0\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.raw.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Windows">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Windows Phone Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.0.0.6482\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
@@ -59,10 +124,16 @@
       <HintPath>..\..\packages\Xamarin.Forms.2.0.0.6482\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Xamarin.iOS">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\Xamarin.iOS\v1.0\Xamarin.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
