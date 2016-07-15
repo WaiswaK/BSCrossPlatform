@@ -30,7 +30,7 @@ namespace BSCrossPlatform
             user.School = new Models.SchoolModel("", "", 1);
 
 
-           // MainPage = new Views.LoginView();
+             MainPage = new Views.LoginView();
             //MainPage = new Views.SubjectsView(user);
         }
 

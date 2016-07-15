@@ -17,8 +17,17 @@ namespace BSCrossPlatform.WinPhone.Tasks
 
         public SQLiteConnection GetConnection()
         {
-            var conn = new SQLiteConnection(null, dbPath, true, null, null, null, null); //(path);
+            SQLiteConnection conn = null;
+            try
+            {
+                conn = new SQLiteConnection(null, dbPath, true, null, null, null, null); //(path);
+            }
+            catch
+            {
+
+            }
             // Return the database connection 
+            //var check = new SQLiteConnection()
             return conn;
         }
 

@@ -3,30 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BSCrossPlatform.Views.LoginView">
   <ContentPage.Content>
-    
-
-    <Grid>
+    <Grid BackgroundColor="#FF3530A2">
       <Grid.RowDefinitions>
         <RowDefinition Height="100"/>
         <RowDefinition Height="*"/>
       </Grid.RowDefinitions>
-      <StackLayout Orientation="Horizontal" Grid.Row="0" BackgroundColor="White">
+      <StackLayout Orientation="Horizontal" Grid.Row="0" BackgroundColor="#FF3530A2" >
         <Image Source="logo.png" />
-        <Label Text= "BrainShare" HorizontalTextAlignment="Start" FontSize="30" VerticalTextAlignment="Center" BackgroundColor="Blue"/>
+        <Label Text= "BrainShare" HorizontalTextAlignment="Start" FontSize="30" VerticalTextAlignment="Center" TextColor="White"/>
       </StackLayout>
-      <StackLayout VerticalOptions="StartAndExpand" Grid.Row="1" BackgroundColor="#FF3530A2">
-        <Label Text="Username" />
+      <StackLayout VerticalOptions="Center" Grid.Row="1" BackgroundColor="#FF3530A2" Padding="5,20,5,0">
+        <Label Text="Username" FontSize="20"/>
         <Entry x:Name="email_tb" Placeholder="username" />
-        <Label Text="Password" />
+        <Label Text="Password" FontSize="20"/>
         <Entry x:Name="password_tb" IsPassword="true" Placeholder="password"/>
         <Button Text="Sign In" Clicked="OnLoginButtonClicked" />
-        <Button Text="Create an Account" Clicked="OnCreateButtonClicked" />
+        <Label Text="OR" HorizontalTextAlignment="Center" FontSize="20"/>
+        <Button Text="Create an Account" Clicked="OnCreateButtonClicked"/>
 
         <Label x:Name="messageLabel" />
       </StackLayout>
     </Grid>
-
-
   </ContentPage.Content>
-  
 </ContentPage>
