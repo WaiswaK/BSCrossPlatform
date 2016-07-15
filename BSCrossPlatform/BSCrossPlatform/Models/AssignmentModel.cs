@@ -2,7 +2,7 @@
 
 namespace BSCrossPlatform.Models
 {
-    class AssignmentModel
+    public class AssignmentModel
     {
       public int id { get; set; }
        public string title { get; set; }

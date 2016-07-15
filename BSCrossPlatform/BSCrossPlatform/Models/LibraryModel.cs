@@ -2,7 +2,7 @@
 
 namespace BSCrossPlatform.Models
 {
-    class LibraryModel
+    public class LibraryModel
     {
         public int library_id { get; set; }
         public List<LibCategoryModel> categories { get; set; }

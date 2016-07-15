@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSCrossPlatform.Droid", "BSCrossPlatform\BSCrossPlatform.Droid\BSCrossPlatform.Droid.csproj", "{60C32E33-AFFC-40DC-9868-258CB81FF986}"
 EndProject
@@ -132,6 +132,7 @@ Global
 		{EFADD8D8-1B7C-4D24-8436-E4EE1A191DA8}.AppStore|x64.ActiveCfg = AppStore|iPhone
 		{EFADD8D8-1B7C-4D24-8436-E4EE1A191DA8}.AppStore|x86.ActiveCfg = AppStore|iPhone
 		{EFADD8D8-1B7C-4D24-8436-E4EE1A191DA8}.Debug|Any CPU.ActiveCfg = Debug|iPhone
+		{EFADD8D8-1B7C-4D24-8436-E4EE1A191DA8}.Debug|Any CPU.Build.0 = Debug|iPhone
 		{EFADD8D8-1B7C-4D24-8436-E4EE1A191DA8}.Debug|ARM.ActiveCfg = Debug|iPhone
 		{EFADD8D8-1B7C-4D24-8436-E4EE1A191DA8}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{EFADD8D8-1B7C-4D24-8436-E4EE1A191DA8}.Debug|iPhone.Build.0 = Debug|iPhone
@@ -256,6 +257,8 @@ Global
 		{9147187C-204B-4A5A-8585-0CE7B430245F}.AppStore|x86.Build.0 = Release|x86
 		{9147187C-204B-4A5A-8585-0CE7B430245F}.AppStore|x86.Deploy.0 = Release|x86
 		{9147187C-204B-4A5A-8585-0CE7B430245F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{9147187C-204B-4A5A-8585-0CE7B430245F}.Debug|Any CPU.Build.0 = Debug|x86
+		{9147187C-204B-4A5A-8585-0CE7B430245F}.Debug|Any CPU.Deploy.0 = Debug|x86
 		{9147187C-204B-4A5A-8585-0CE7B430245F}.Debug|ARM.ActiveCfg = Debug|ARM
 		{9147187C-204B-4A5A-8585-0CE7B430245F}.Debug|ARM.Build.0 = Debug|ARM
 		{9147187C-204B-4A5A-8585-0CE7B430245F}.Debug|ARM.Deploy.0 = Debug|ARM

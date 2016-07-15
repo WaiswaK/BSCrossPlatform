@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BSCrossPlatform.Views.LoginView">
+  <ContentPage.Content>
+    
+
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="100"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <StackLayout Orientation="Horizontal" Grid.Row="0" BackgroundColor="White">
+        <Image Source="logo.png" />
+        <Label Text= "BrainShare" HorizontalTextAlignment="Start" FontSize="30" VerticalTextAlignment="Center" BackgroundColor="Blue"/>
+      </StackLayout>
+      <StackLayout VerticalOptions="StartAndExpand" Grid.Row="1" BackgroundColor="#FF3530A2">
+        <Label Text="Username" />
+        <Entry x:Name="email_tb" Placeholder="username" />
+        <Label Text="Password" />
+        <Entry x:Name="password_tb" IsPassword="true" Placeholder="password"/>
+        <Button Text="Sign In" Clicked="OnLoginButtonClicked" />
+        <Button Text="Create an Account" Clicked="OnCreateButtonClicked" />
+
+        <Label x:Name="messageLabel" />
+      </StackLayout>
+    </Grid>
+
+
+  </ContentPage.Content>
+  
+</ContentPage>

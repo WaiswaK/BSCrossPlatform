@@ -1,6 +1,6 @@
 ﻿namespace BSCrossPlatform.Models
 {
-    class BookModel
+    public class BookModel
     {
         public int book_id { get; set; }
         public string book_title { get; set; }

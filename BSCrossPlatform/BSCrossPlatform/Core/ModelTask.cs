@@ -762,5 +762,30 @@ namespace BSCrossPlatform.Core
             return lib;
         }
         #endregion      
+        public static async void UserUpdater(UserModel user, List<SubjectModel> newsubjects, List<SubjectModel> updateableSubjects, UserModel CurrentUser,
+            LibraryModel newlib, List<LibCategoryModel> updatedCategories)
+        {
+            await DBInsertionTask.UpdateUserAsync(user);
+            DBInsertionTask.UpdateLibAsync(newlib); //Will be checked later // Could be awaitable
+            if (updateableSubjects == null && newsubjects == null)
+            {
+            }
+            else
+            {
+                if (updateableSubjects == null)
+                {
+                    DBInsertionTask.InsertSubjectsAsync(newsubjects);
+                }
+                if (newsubjects == null)
+                {
+                    DBInsertionTask.UpdateSubjectsAsync(updateableSubjects);
+                }
+                if (updateableSubjects != null && newsubjects != null)
+                {
+                    DBInsertionTask.InsertSubjectsAsync(newsubjects);
+                    DBInsertionTask.UpdateSubjectsAsync(updateableSubjects);
+                }
+            }
+        }
     }
 }

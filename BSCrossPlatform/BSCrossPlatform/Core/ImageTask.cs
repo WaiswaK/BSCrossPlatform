@@ -1,10 +1,9 @@
-﻿using BSCrossPlatform.Common;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace BSCrossPlatform.Core
 {
-    class ImageTask
+    public class ImageTask
     {
         //Getting image format from a string 
         public static string imageFormat(string filepath)
@@ -134,6 +133,16 @@ namespace BSCrossPlatform.Core
             string imagename = string.Empty;
             char[] delimiter = { '?' };
             string[] linksplit = fileName.Split(delimiter);
+            List<string> linklist = linksplit.ToList();
+            imagename = linklist.Last();
+            return imagename;
+        }
+        //Getting image name from a string
+        public static string imageName(string filepath)
+        {
+            string imagename = string.Empty;
+            char[] delimiter = { '/' };
+            string[] linksplit = filepath.Split(delimiter);
             List<string> linklist = linksplit.ToList();
             imagename = linklist.Last();
             return imagename;

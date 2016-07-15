@@ -1,0 +1,52 @@
+C:\Users\Kenneth\OneDrive\Documents\Visual Studio 2015\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\BSCrossPlatform.Windows.csprojResolveAssemblyReference.cache
+C:\Users\Kenneth\OneDrive\Documents\Visual Studio 2015\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\App.g.i.cs
+C:\Users\Kenneth\OneDrive\Documents\Visual Studio 2015\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\App.g.cs
+C:\Users\Kenneth\OneDrive\Documents\Visual Studio 2015\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\MainPage.g.i.cs
+C:\Users\Kenneth\OneDrive\Documents\Visual Studio 2015\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\MainPage.g.cs
+C:\Users\Kenneth\OneDrive\Documents\Visual Studio 2015\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Kenneth\OneDrive\Documents\Visual Studio 2015\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\App.xaml
+C:\Users\Kenneth\OneDrive\Documents\Visual Studio 2015\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\MainPage.xaml
+C:\Users\Kenneth\OneDrive\Documents\Visual Studio 2015\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\App.xbf
+C:\Users\Kenneth\OneDrive\Documents\Visual Studio 2015\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\MainPage.xbf
+C:\Users\Kenneth\OneDrive\Documents\Visual Studio 2015\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\XamlSaveStateFile.xml
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\App.xbf
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\MainPage.xbf
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\BSCrossPlatform.Windows.xr.xml
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\BSCrossPlatform.Windows.exe
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\BSCrossPlatform.Windows.pdb
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\BSCrossPlatform.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\PCLStorage.Abstractions.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\PCLStorage.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\SQLite.Net.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\SQLite.Net.Platform.WinRT.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\Xamarin.Forms.Core.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\Xamarin.Forms.Platform.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.Tablet.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\Newtonsoft.Json.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\System.Core.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\System.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\Mono.Dynamic.Interpreter.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\System.Xml.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\BSCrossPlatform.pdb
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\PCLStorage.xml
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\PCLStorage.Abstractions.xml
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\Xamarin.Forms.Core.xml
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.pri
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.Tablet.pri
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\bin\Debug\Newtonsoft.Json.xml
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\BSCrossPlatform.Windows.csprojResolveAssemblyReference.cache
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\App.g.i.cs
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\App.g.cs
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\MainPage.g.i.cs
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\MainPage.g.cs
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\XamlTypeInfo.g.cs
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\App.xaml
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\MainPage.xaml
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\App.xbf
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\MainPage.xbf
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\XamlSaveStateFile.xml
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\BSCrossPlatform.Windows.exe
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Windows\obj\Debug\BSCrossPlatform.Windows.pdb

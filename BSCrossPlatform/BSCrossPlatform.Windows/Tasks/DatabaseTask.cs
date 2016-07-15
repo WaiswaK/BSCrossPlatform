@@ -10,7 +10,7 @@ namespace BSCrossPlatform.Windows.Tasks
     class DatabaseTask : Interfaces.IDatabase
     {
         private static StorageFolder appFolder = ApplicationData.Current.LocalFolder;
-        private static string dbPath = System.IO.Path.Combine(appFolder.Path, Common.Constant.dbName);
+        private static string dbPath = System.IO.Path.Combine(appFolder.Path, Core.Constant.dbName);
 
         public DatabaseTask()
         {
@@ -19,14 +19,13 @@ namespace BSCrossPlatform.Windows.Tasks
 
         public SQLiteConnection GetConnection()
         {
-            var conn = new SQLiteConnection(null, dbPath, true, null, null, null, null); //(path);
-            // Return the database connection 
+            var conn = new SQLiteConnection(null, dbPath, true, null, null, null, null); 
             return conn;
         }
 
         public async System.Threading.Tasks.Task InitializeDatabase()
         {
-            if (await LocalDatabaseNotPresent(Common.Constant.dbName))
+            if (await LocalDatabaseNotPresent(Core.Constant.dbName))
             {
                 using (var db = GetConnection())
                 {

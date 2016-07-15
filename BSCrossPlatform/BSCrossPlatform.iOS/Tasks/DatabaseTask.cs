@@ -9,7 +9,7 @@ namespace BSCrossPlatform.iOS.Database
     {
         static string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal); // Documents folder
         static string libraryPath = System.IO.Path.Combine(documentsPath, "..", "Library"); // Library folder
-        string dbPath = System.IO.Path.Combine(libraryPath, Common.Constant.dbName);
+        string dbPath = System.IO.Path.Combine(libraryPath, Core.Constant.dbName);
 
         public DBConnection()
         {
@@ -21,7 +21,7 @@ namespace BSCrossPlatform.iOS.Database
         }
         public async System.Threading.Tasks.Task InitializeDatabase()
         {
-            if (await LocalDatabaseNotPresent(Common.Constant.dbName))
+            if (await LocalDatabaseNotPresent(Core.Constant.dbName))
             {
                 using (var db = GetConnection())
                 {

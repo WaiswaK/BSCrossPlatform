@@ -1,6 +1,6 @@
 ﻿namespace BSCrossPlatform.Models
 {
-    class LoginStatus
+    public class LoginStatus
     {
         public string statusCode { get; set; }
         public string statusDescription { get; set; }

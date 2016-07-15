@@ -9,7 +9,7 @@ namespace BSCrossPlatform.UWP.Tasks
     class DatabaseTask : Interfaces.IDatabase
     {
         private static Windows.Storage.StorageFolder appFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
-        private static string dbPath = System.IO.Path.Combine(appFolder.Path, Common.Constant.dbName);
+        private static string dbPath = System.IO.Path.Combine(appFolder.Path, Core.Constant.dbName);
 
         public DatabaseTask()
         {
@@ -23,7 +23,7 @@ namespace BSCrossPlatform.UWP.Tasks
 
         public async System.Threading.Tasks.Task InitializeDatabase()
         {
-            if (await LocalDatabaseNotPresent(Common.Constant.dbName))
+            if (await LocalDatabaseNotPresent(Core.Constant.dbName))
             {
                 using (var db = GetConnection())
                 {

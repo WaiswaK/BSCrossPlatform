@@ -1,5 +1,4 @@
-﻿using BSCrossPlatform.Common;
-using BSCrossPlatform.Models;
+﻿using BSCrossPlatform.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -46,7 +45,7 @@ namespace BSCrossPlatform.Core
             postData.Add(new KeyValuePair<string, string>("email", username));
             postData.Add(new KeyValuePair<string, string>("password", password));
             var formContent = new FormUrlEncodedContent(postData);
-            var authresponse = await client.PostAsync(Common.Constant.LoginJsonLink, formContent);
+            var authresponse = await client.PostAsync(Constant.LoginJsonLink, formContent);
             var authresult = await authresponse.Content.ReadAsStreamAsync();
             var authstreamReader = new System.IO.StreamReader(authresult);
             var authresponseContent = authstreamReader.ReadToEnd().Trim().ToString();

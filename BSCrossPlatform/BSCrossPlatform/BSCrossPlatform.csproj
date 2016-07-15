@@ -36,20 +36,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="Common\BooleanToVisibilityConverter.cs" />
-    <Compile Include="Common\CommonTask.cs" />
-    <Compile Include="Common\Constant.cs" />
-    <Compile Include="Common\Message.cs" />
-    <Compile Include="Common\ObservableDictionary.cs" />
-    <Compile Include="Common\RelayCommand.cs" />
-    <Compile Include="Common\WebViewContentHelper.cs" />
+    <Compile Include="Core\CommonTask.cs" />
+    <Compile Include="Core\Constant.cs" />
     <Compile Include="Core\DBInsertionTask.cs" />
     <Compile Include="Core\DBRetrievalTask.cs" />
     <Compile Include="Core\ErrorLogTask.cs" />
     <Compile Include="Core\ImageTask.cs" />
     <Compile Include="Core\JSONTask.cs" />
-    <Compile Include="Core\NotesTask.cs" />
+    <Compile Include="Core\Message.cs" />
     <Compile Include="Core\ModelTask.cs" />
+    <Compile Include="Core\NotesTask.cs" />
+    <Compile Include="Core\WebViewContentHelper.cs" />
     <Compile Include="Database\Assignment.cs" />
     <Compile Include="Database\Attachment.cs" />
     <Compile Include="Database\Book.cs" />
@@ -69,24 +66,22 @@
     <Compile Include="Models\LibCategoryModel.cs" />
     <Compile Include="Models\LibraryModel.cs" />
     <Compile Include="Models\LoginStatus.cs" />
-    <Compile Include="Models\PdfDataItem.cs" />
+    <Compile Include="Models\ModulesModel.cs" />
     <Compile Include="Models\SchoolModel.cs" />
     <Compile Include="Models\SubjectModel.cs" />
     <Compile Include="Models\TopicModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Models\VideoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\AssignmentPageViewModel.cs" />
-    <Compile Include="ViewModels\CategoryPageViewModel.cs" />
-    <Compile Include="ViewModels\LibraryCategoriesViewModel.cs" />
+    <Compile Include="ViewModels\AssignmentViewModel.cs" />
+    <Compile Include="ViewModels\CategoryViewModel.cs" />
     <Compile Include="ViewModels\LibraryCategoryBooksViewModel.cs" />
-    <Compile Include="ViewModels\LoginPageViewModel.cs" />
-    <Compile Include="ViewModels\PlayPageViewModel.cs" />
-    <Compile Include="ViewModels\StudentPageViewModel.cs" />
-    <Compile Include="ViewModels\SubjectPageViewModel.cs" />
-    <Compile Include="ViewModels\TopicPageViewModel.cs" />
-    <Compile Include="ViewModels\TopicsPageViewModel.cs" />
-    <Compile Include="ViewModels\VideosPageViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\PlayViewModel.cs" />
+    <Compile Include="ViewModels\StudentViewModel.cs" />
+    <Compile Include="ViewModels\SubjectViewModel.cs" />
+    <Compile Include="ViewModels\TopicViewModel.cs" />
+    <Compile Include="ViewModels\TopicsViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -129,7 +124,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="GettingStarted.Xamarin" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

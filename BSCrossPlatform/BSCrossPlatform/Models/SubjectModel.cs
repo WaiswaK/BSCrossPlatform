@@ -2,7 +2,7 @@
 
 namespace BSCrossPlatform.Models
 {
-    class SubjectModel
+    public class SubjectModel
     {
         public int Id { get; set; }
         public string name { get; set; }

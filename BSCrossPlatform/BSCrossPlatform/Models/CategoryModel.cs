@@ -2,7 +2,7 @@
 
 namespace BSCrossPlatform.Models
 {
-    class CategoryModel
+    public class CategoryModel
     {
         public string categoryName { get; set; }
         public string categoryImage { get; set; }
@@ -10,6 +10,7 @@ namespace BSCrossPlatform.Models
         public List<AttachmentModel> files { get; set; }
         public List<VideoModel> videos { get; set; }
         public List<AssignmentModel> assignments { get; set; }
+        public List<TopicModel> topics { get; set; }
         public CategoryModel() { }
         public CategoryModel(string _categoryname, string _categoryImage, int _categoryCount, List<AttachmentModel> _files) 
         {
@@ -31,6 +32,13 @@ namespace BSCrossPlatform.Models
             categoryImage = _categoryImage;
             categorycount = _categoryCount;
             videos = _videos;
+        }
+        public CategoryModel(string _categoryname, string _categoryImage, int _categoryCount, List<TopicModel> _topics)
+        {
+            categoryName = _categoryname;
+            categoryImage = _categoryImage;
+            categorycount = _categoryCount;
+            topics = _topics;
         }
     }
 }

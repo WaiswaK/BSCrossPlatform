@@ -1,0 +1,29 @@
+C:\Users\Kenneth\OneDrive\Documents\Visual Studio 2015\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\Kenneth\OneDrive\Documents\Visual Studio 2015\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\obj\iPhone\Debug\optimized\
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\BSCrossPlatformiOS.exe
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\BSCrossPlatformiOS.pdb
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\BSCrossPlatform.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\PCLStorage.Abstractions.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\PCLStorage.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\SQLite.Net.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\SQLite.Net.Platform.XamarinIOS.Unified.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\BSCrossPlatform.pdb
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\PCLStorage.xml
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\PCLStorage.Abstractions.xml
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.xml
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.xml
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\Newtonsoft.Json.xml
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\obj\iPhone\Debug\optimized\
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\obj\iPhone\Debug\BSCrossPlatform.iOS.csprojResolveAssemblyReference.cache
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\obj\iPhone\Debug\BSCrossPlatformiOS.exe
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\obj\iPhone\Debug\BSCrossPlatformiOS.pdb
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\obj\iPhone\Debug\BSCrossPlatformiOS.exe.mdb
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\bin\iPhone\Debug\BSCrossPlatformiOS.exe.mdb

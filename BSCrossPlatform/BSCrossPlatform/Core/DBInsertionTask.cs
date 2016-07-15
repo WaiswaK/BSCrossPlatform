@@ -1,14 +1,13 @@
-﻿using BSCrossPlatform.Core;
-using BSCrossPlatform.Database;
+﻿using BSCrossPlatform.Database;
 using BSCrossPlatform.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace BrainShare.Core
+namespace BSCrossPlatform.Core
 {
-    class DatabaseInsertTasks
+    class DBInsertionTask
     {
         #region Insert Methods
         //Method to insert Subjects into the SQLite Database
@@ -21,7 +20,7 @@ namespace BrainShare.Core
             bool proceed = true;
             try
             {
-                var db = DependencyService.Get<BSCrossPlatform.Interfaces.IDatabase>().GetConnection();
+                var db = DependencyService.Get<Interfaces.IDatabase>().GetConnection();
 
                 foreach (var subject in subjects)
                 {
@@ -152,7 +151,7 @@ namespace BrainShare.Core
             List<AttachmentModel> files = new List<AttachmentModel>();
             try
             {
-                var db = DependencyService.Get<BSCrossPlatform.Interfaces.IDatabase>().GetConnection();
+                var db = DependencyService.Get<Interfaces.IDatabase>().GetConnection();
                 foreach (var subject in subjects)
                 {
                     topics = subject.topics;
@@ -196,7 +195,7 @@ namespace BrainShare.Core
         //Task to Insert a User into the database
         public static async Task InsertUserAsync(UserModel user)
         {
-            var db = DependencyService.Get<BSCrossPlatform.Interfaces.IDatabase>().GetConnection();
+            var db = DependencyService.Get<Interfaces.IDatabase>().GetConnection();
             List<string> subjectsnames = ModelTask.SubjectNames(user.subjects);
             string ConcatSubjects = ModelTask.JoinedSubjects(subjectsnames);
             SchoolModel school = user.School;
@@ -209,7 +208,7 @@ namespace BrainShare.Core
             }
             try
             {
-                await DependencyService.Get<BSCrossPlatform.Interfaces.ITask>().ImageDownloader(school.ImagePath, school.SchoolName);
+                await DependencyService.Get<Interfaces.ITask>().ImageDownloader(school.ImagePath, school.SchoolName);
             }
             catch
             {
@@ -217,7 +216,7 @@ namespace BrainShare.Core
             }
 
             string image_extension = ImageTask.imageFormat(school.ImagePath);
-            string newPath = DependencyService.Get<BSCrossPlatform.Interfaces.ITask>().imagePath(school.SchoolName + image_extension);
+            string newPath = DependencyService.Get<Interfaces.ITask>().imagePath(school.SchoolName + image_extension);
             try
             {
                 db.Insert(new School() { SchoolName = school.SchoolName, SchoolBadge = newPath, School_id = school.SchoolId });
@@ -230,7 +229,7 @@ namespace BrainShare.Core
         public static async void InsertLibAsync(LibraryModel lib)
         {
             List<LibCategoryModel> categories = lib.categories;
-            var db = DependencyService.Get<BSCrossPlatform.Interfaces.IDatabase>().GetConnection();
+            var db = DependencyService.Get<Interfaces.IDatabase>().GetConnection();
             if (categories == null)
             {
 
@@ -244,9 +243,9 @@ namespace BrainShare.Core
                     {
                         try
                         {
-                            await DependencyService.Get<BSCrossPlatform.Interfaces.ITask>().ImageDownloader(book.thumb_url, book.book_title);
+                            await DependencyService.Get<Interfaces.ITask>().ImageDownloader(book.thumb_url, book.book_title);
                             string image_extension = ImageTask.imageFormat(book.thumb_url);
-                            string newPath = DependencyService.Get<BSCrossPlatform.Interfaces.ITask>().imagePath(book.book_title + image_extension);
+                            string newPath = DependencyService.Get<Interfaces.ITask>().imagePath(book.book_title + image_extension);
                             //Insert here book if success here
                             db.Insert(new Book()
                             {
@@ -290,17 +289,17 @@ namespace BrainShare.Core
         //Task to Update User
         public static async Task UpdateUserAsync(UserModel user)
         {
-            var db = DependencyService.Get<BSCrossPlatform.Interfaces.IDatabase>().GetConnection();
+            var db = DependencyService.Get<Interfaces.IDatabase>().GetConnection();
             List<string> subjectsnames = ModelTask.SubjectNames(user.subjects);
             string ConcatSubjects = ModelTask.JoinedSubjects(subjectsnames);
             ConcatSubjects = ModelTask.UserSubjects(ConcatSubjects);
             SchoolModel school = user.School;
             string image_extension = ImageTask.imageFormat(school.ImagePath);
-            string newPath = DependencyService.Get<BSCrossPlatform.Interfaces.ITask>().imagePath(school.SchoolName + image_extension);
+            string newPath = DependencyService.Get<Interfaces.ITask>().imagePath(school.SchoolName + image_extension);
             if (school.ImagePath.Equals(newPath)) { } //Checking if image was downloaded
             else
             {
-                await DependencyService.Get<BSCrossPlatform.Interfaces.ITask>().ImageDownloader(school.ImagePath, school.SchoolName);
+                await DependencyService.Get<Interfaces.ITask>().ImageDownloader(school.ImagePath, school.SchoolName);
                 School sch = new School(school.SchoolId, school.SchoolName, newPath);
                 try
                 {
@@ -331,7 +330,7 @@ namespace BrainShare.Core
             List<AssignmentModel> assignments = new List<AssignmentModel>();
             try
             {
-                var db = DependencyService.Get<BSCrossPlatform.Interfaces.IDatabase>().GetConnection();
+                var db = DependencyService.Get<Interfaces.IDatabase>().GetConnection();
                 foreach (var subject in subjects)
                 {
                     topics = subject.topics;
@@ -435,7 +434,7 @@ namespace BrainShare.Core
         public static async void UpdateLibAsync(LibraryModel lib)
         {
             List<LibCategoryModel> categories = lib.categories;
-            var db = DependencyService.Get<BSCrossPlatform.Interfaces.IDatabase>().GetConnection();
+            var db = DependencyService.Get<Interfaces.IDatabase>().GetConnection();
             if (categories == null)
             {
 
@@ -447,9 +446,9 @@ namespace BrainShare.Core
                     List<BookModel> books = category.category_books;
                     foreach (var book in books)
                     {
-                        await DependencyService.Get<BSCrossPlatform.Interfaces.ITask>().ImageDownloader(book.thumb_url, book.book_title);
+                        await DependencyService.Get<Interfaces.ITask>().ImageDownloader(book.thumb_url, book.book_title);
                         string image_extension = ImageTask.imageFormat(book.thumb_url);
-                        string newPath = DependencyService.Get<BSCrossPlatform.Interfaces.ITask>().imagePath(book.book_title + image_extension);
+                        string newPath = DependencyService.Get<Interfaces.ITask>().imagePath(book.book_title + image_extension);
                         db.Insert(new Book()
                         {
                             Book_id = book.book_id,

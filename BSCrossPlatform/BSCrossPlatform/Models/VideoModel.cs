@@ -1,6 +1,6 @@
 ﻿namespace BSCrossPlatform.Models
 {
-    class VideoModel
+    public class VideoModel
     {
         public string FilePath { get; set; }
         public string FileName { get; set; }

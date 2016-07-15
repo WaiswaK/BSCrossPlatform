@@ -2,7 +2,7 @@
 
 namespace BSCrossPlatform.Models
 {
-    class LibCategoryModel
+    public class LibCategoryModel
     {
         public int category_id { get; set; }
         public string category_name { get; set; }
@@ -17,7 +17,6 @@ namespace BSCrossPlatform.Models
             category_name = name;
             book_count = count;
             category_books = books;
-
         }
     }
 }

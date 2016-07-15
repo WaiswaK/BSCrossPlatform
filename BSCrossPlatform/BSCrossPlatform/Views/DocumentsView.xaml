@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BSCrossPlatform.Views.DocumentsView">
+  <ContentPage.Content >
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="100"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <StackLayout Orientation="Horizontal" Grid.Row="0">
+        <Image Source="Files.jpg" />
+        <Label Text= "Featured Documents" HorizontalTextAlignment="Start" FontSize="30" VerticalTextAlignment="Center"/>
+      </StackLayout>
+      <StackLayout Grid.Row="1">
+        <ListView RowHeight ="80"
+                ItemsSource ="{Binding FileList}"
+                ItemTapped ="Handle_ItemTapped"
+                ItemSelected ="Handle_ItemSelected"
+      >
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ImageCell ImageSource="pdf.gif" Text="{ Binding FileName }"/>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </StackLayout>
+    </Grid>
+  </ContentPage.Content>
+</ContentPage>

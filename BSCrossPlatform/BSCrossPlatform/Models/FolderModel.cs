@@ -2,7 +2,7 @@
 
 namespace BSCrossPlatform.Models
 {
-    class FolderModel
+    public class FolderModel
     {
         public int folder_id { get; set; }
         public string folder_name { get; set;}

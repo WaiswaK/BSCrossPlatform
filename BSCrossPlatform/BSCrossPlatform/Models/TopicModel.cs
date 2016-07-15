@@ -2,7 +2,7 @@
 
 namespace BSCrossPlatform.Models
 {
-    class TopicModel
+    public class TopicModel
     {
         public string TopicTitle { get; set; }
         public int TopicID { get; set; }
