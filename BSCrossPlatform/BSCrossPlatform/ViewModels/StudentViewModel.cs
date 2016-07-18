@@ -30,47 +30,17 @@ namespace BSCrossPlatform.ViewModels
             get { return _studentContent; }
             set { _studentContent = value; }
         }
-        //Subjects
-        private List<SubjectModel> _courses;
-        public List<SubjectModel> CourseList
-        {
-            get { return _courses; }
-            set { _courses = value; }
-        }
-        /*private string _subjecticon;
-        public string SubjectIcon
-        {
-            get { return _subjecticon; }
-            set { _subjecticon = value; }
-        }*/
-        //Library
-        private List<LibCategoryModel> _libCategory;
-        public List<LibCategoryModel> CategoryList
-        {
-            get { return _libCategory; }
-            set { _libCategory = value; }
-        }
-        /*private string _libraryicon;
-        public string LibraryIcon
-        {
-            get { return _libraryicon; }
-            set { _libraryicon = value; }
-        }*/
-        
+       
         public StudentViewModel(UserModel user)
         {
             School = user.School;
             SchoolName = School.SchoolName;
             SchoolBadge = School.ImagePath;
-            CourseList = user.subjects;
-            CategoryList = user.Library.categories;
             StudentContent = new List<ModulesModel>()
             {
-                new ModulesModel("Subjects / Units", "units.png"),
-                new ModulesModel("Library (eBooks)","library.png")
+                new ModulesModel("Subjects / Units", "units.png",user.subjects),
+                new ModulesModel("Library (eBooks)","library.png",user.Library.categories)
             };
-            //LibraryIcon = "library.png";
-            //SubjectIcon = "units.png";
         }
     }
 }

@@ -17,7 +17,8 @@ namespace BSCrossPlatform.UWP.Tasks
 
         public SQLiteConnection GetConnection()
         {
-            var conn = new SQLiteConnection(null, dbPath, true, null, null, null, null); 
+            var conn = new SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(),
+                dbPath, true, null, null, null, null); 
             return conn;
         }
 

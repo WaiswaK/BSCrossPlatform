@@ -14,7 +14,7 @@
       </StackLayout>
       <StackLayout Grid.Row="1">
         <ListView RowHeight ="80"
-                ItemsSource ="{Binding CourseList}"
+                ItemsSource ="{Binding CategoryList}"
                 ItemTapped ="Handle_ItemTapped"
                 ItemSelected ="Handle_ItemSelected"
       >

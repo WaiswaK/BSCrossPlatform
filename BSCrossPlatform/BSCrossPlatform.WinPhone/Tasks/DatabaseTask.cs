@@ -9,28 +9,16 @@ namespace BSCrossPlatform.WinPhone.Tasks
     {
         private static Windows.Storage.StorageFolder appFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
         private static string dbPath = System.IO.Path.Combine(appFolder.Path, Core.Constant.dbName);
-
         public DatabaseTask()
         {
             //conn = new SQLiteConnection(dbPath);
         }
-
         public SQLiteConnection GetConnection()
         {
-            SQLiteConnection conn = null;
-            try
-            {
-                conn = new SQLiteConnection(null, dbPath, true, null, null, null, null); //(path);
-            }
-            catch
-            {
-
-            }
-            // Return the database connection 
-            //var check = new SQLiteConnection()
+            var conn = new SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), 
+             dbPath, true, null, null, null, null);
             return conn;
         }
-
         public async System.Threading.Tasks.Task InitializeDatabase()
         {
             if (await LocalDatabaseNotPresent(Core.Constant.dbName))

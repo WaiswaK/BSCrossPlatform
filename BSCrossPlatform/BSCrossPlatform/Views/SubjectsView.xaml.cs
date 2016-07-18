@@ -6,18 +6,20 @@ namespace BSCrossPlatform.Views
 {
     public partial class SubjectsView : ContentPage
     {
-        public SubjectsView(UserModel user)
+        public SubjectsView(ModulesModel subjects)
         {
             InitializeComponent();
-            BindingContext = new StudentViewModel(user);
+            BindingContext = new ModulesViewModel(subjects);
         }
         void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
         => ((ListView)sender).SelectedItem = null;
-        void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        async void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var subject = ((ListView)sender).SelectedItem as SubjectModel;
             if (subject == null)
                 return; //Move to nextpage
+            else
+                await Navigation.PushAsync(new SubjectView(subject));
         }
     }
 }

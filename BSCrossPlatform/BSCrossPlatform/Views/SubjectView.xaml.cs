@@ -14,32 +14,22 @@ namespace BSCrossPlatform.Views
         }
         void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
         => ((ListView)sender).SelectedItem = null;
-        void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        async void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var category = ((ListView)sender).SelectedItem as CategoryModel;
             if (category == null)
                 return; //Move to nextpage
-            /*
-                var item = e.ClickedItem;
-            CategoryModel _category = ((CategoryModel)item);
-            if (_category.categoryName.Equals("Quiz"))
+            else
             {
-                Frame.Navigate(typeof(TopicsPage), _category);
+                if (category.categoryName.Equals("Videos"))
+                    await Navigation.PushAsync(new VideosView(category));
+                if (category.categoryName.Equals("Files"))
+                    await Navigation.PushAsync(new DocumentsView(category));
+                if (category.categoryName.Equals("Assignments"))
+                    await Navigation.PushAsync(new AssignmentsView(category));
+                if (category.categoryName.Equals("Topics"))
+                    ;// await Navigation.PushAsync(new TopicsView(category));
             }
-            if (_category.categoryName.Equals("Videos"))
-            {
-                Frame.Navigate(typeof(VideosView), _category);
-            }
-            if (_category.categoryName.Equals("Files"))
-            {
-                Frame.Navigate(typeof(DocumentsView), _category);
-            }
-            if (_category.categoryName.Equals("Assignments"))
-            {
-                Frame.Navigate(typeof(AssignmentsView), _category);
-            }*/
-
-
         }
     }
 }

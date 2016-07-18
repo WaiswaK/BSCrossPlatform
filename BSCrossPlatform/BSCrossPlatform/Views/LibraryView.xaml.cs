@@ -7,18 +7,19 @@ namespace BSCrossPlatform.Views
 {
     public partial class LibraryView : ContentPage
     {
-        public LibraryView(UserModel user)
+        public LibraryView(ModulesModel module)
         {
             InitializeComponent();
-            BindingContext = new StudentViewModel(user);
+            BindingContext = new ModulesViewModel(module);
         }
         void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
         => ((ListView)sender).SelectedItem = null;
-        void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        async void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var libraryCategory = ((ListView)sender).SelectedItem as LibCategoryModel;
             if (libraryCategory == null)
-                return; //Move to nextpage
+                return;
+            else await Navigation.PushAsync(new LibraryCategoryBooksView(libraryCategory));
         }
     }
 }

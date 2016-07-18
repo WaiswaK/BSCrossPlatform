@@ -16,7 +16,7 @@ namespace BSCrossPlatform.iOS.Database
         }
         public SQLiteConnection GetConnection()
         {
-            var conn = new SQLiteConnection(null, dbPath, true, null, null, null, null); 
+            var conn = new SQLiteConnection(new SQLite.Net.Platform.XamarinIOS.SQLitePlatformIOS(), dbPath, true, null, null, null, null); 
             return conn;
         }
         public async System.Threading.Tasks.Task InitializeDatabase()

@@ -18,11 +18,17 @@ namespace BSCrossPlatform.Views
 
         void OnLoginButtonClicked(object sender, EventArgs e)
         {
+            LoadingMsg.Text = Message.User_Validation;
+            LoadingMsg.IsVisible = true;
             Login();
         }
-        void OnCreateButtonClicked(object sender, EventArgs e)
+        async void OnCreateButtonClicked(object sender, EventArgs e)
         {
-            //Login(); //To be coded later
+            await Navigation.PushAsync(new BrowserView(Core.Constant.RegisterUri));
+        }
+        void OnForgetClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new BrowserView(Core.Constant.PasswordUri));
         }
         public async void Login()
         {
@@ -42,6 +48,8 @@ namespace BSCrossPlatform.Views
             List<User> users = DBRetrievalTask.SelectAllUsers();
             if (users == null)
             {
+                //var message = DisplayAlert(Message.Login_Message_Fail, Message.Login_Header);
+                LoadingMsg.IsVisible = false;
             }
             else
             {
@@ -139,7 +147,7 @@ namespace BSCrossPlatform.Views
             }
             catch
             {
-
+                LoadingMsg.IsVisible = false;
             }
         }
         private async void CreateUser(Newtonsoft.Json.Linq.JObject loginObject, string username, string password)
@@ -164,6 +172,8 @@ namespace BSCrossPlatform.Views
 
                 }
                 userdetails.Library = Library;
+                LoadingMsg.Text = Message.Syncronization;
+                LoadingMsg.IsVisible = true;
                 try
                 {
                     Newtonsoft.Json.Linq.JArray subjects = await JSONTask.SubjectsJsonArray(username, password);
@@ -174,13 +184,13 @@ namespace BSCrossPlatform.Views
                 }
                 catch
                 {
-
+                    LoadingMsg.IsVisible = false;
                 }
 
             }
             else
             {
-
+                LoadingMsg.IsVisible = false;
             }
         }
         private async void AuthenticateUser(UserModel user)

@@ -1,2 +1,0 @@
-D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.WinPhone\BSCrossPlatform.WinPhone.csproj;neutral
-D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.csproj;neutral

@@ -11,7 +11,6 @@ namespace BSCrossPlatform.Models
         public List<VideoModel> videos { get; set; }
         public List<AssignmentModel> assignments { get; set; }
         public List<TopicModel> topics { get; set; }
-        public CategoryModel() { }
         public CategoryModel(string _categoryname, string _categoryImage, int _categoryCount, List<AttachmentModel> _files) 
         {
             categoryName = _categoryname;

@@ -8,20 +8,23 @@
         <RowDefinition Height="100"/>
         <RowDefinition Height="*"/>
       </Grid.RowDefinitions>
-      <StackLayout Orientation="Horizontal" Grid.Row="0" BackgroundColor="#FF3530A2" >
+      <StackLayout Orientation="Horizontal" Grid.Row="0" BackgroundColor="#FF3530A2" Padding="15,20,15,0">
         <Image Source="logo.png" />
-        <Label Text= "BrainShare" HorizontalTextAlignment="Start" FontSize="30" VerticalTextAlignment="Center" TextColor="White"/>
+        <Label Text= "BrainShare" HorizontalTextAlignment="Start" FontSize="50" VerticalTextAlignment="Center" TextColor="White"/>
       </StackLayout>
-      <StackLayout VerticalOptions="Center" Grid.Row="1" BackgroundColor="#FF3530A2" Padding="5,20,5,0">
-        <Label Text="Username" FontSize="20"/>
-        <Entry x:Name="email_tb" Placeholder="username" />
-        <Label Text="Password" FontSize="20"/>
-        <Entry x:Name="password_tb" IsPassword="true" Placeholder="password"/>
+      <StackLayout VerticalOptions="Center" Grid.Row="1" BackgroundColor="#FF3530A2" Padding="15,20,15,0">
+        <Label Text="Login" FontSize="30"/>
+        <Entry x:Name="email_tb" Placeholder="Email" />
+        <!--<Label Text="Password" FontSize="20"/>-->
+        <Entry x:Name="password_tb" IsPassword="true" Placeholder="Password"/>
         <Button Text="Sign In" Clicked="OnLoginButtonClicked" />
         <Label Text="OR" HorizontalTextAlignment="Center" FontSize="20"/>
         <Button Text="Create an Account" Clicked="OnCreateButtonClicked"/>
-
-        <Label x:Name="messageLabel" />
+        <Button Text ="Forgot your Password?" 
+                TextColor="Gray"
+                BorderColor="#FF3530A2" Clicked="OnForgetClicked"/>
+        
+        <Label x:Name="LoadingMsg" IsVisible="False" HorizontalTextAlignment="Center"/>
       </StackLayout>
     </Grid>
   </ContentPage.Content>

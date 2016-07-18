@@ -14,14 +14,12 @@ namespace BSCrossPlatform.Views
         }
         void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
         => ((ListView)sender).SelectedItem = null;
-        void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        async void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var notes = ((ListView)sender).SelectedItem as VideoModel;
-            if (notes == null)
-                return; //Move to nextpage
-            //var item = e.ClickedItem;
-            //FolderModel _folder = ((FolderModel)item);
-            //Frame.Navigate(typeof(TopicsPage), _folder);
+            var videofile = ((ListView)sender).SelectedItem as VideoModel;
+            if (videofile == null)
+                return; 
+            else await Navigation.PushAsync(new PlayView(videofile));
         }
     }
 }

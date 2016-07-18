@@ -5,7 +5,8 @@
         public static string dbName = "BrainShareDB.sqlite";
         private static string http = "http://";
         private static string www = "www.";
-        private static string Base = "brainshare.ug";
+        //private static string Base = "brainshare.ug";
+        private static string Base = "eshuli.rw";
         public static string BaseUri = http + Base;
         public static string PDF_extension = ".pdf";
         public static string JPG_extension = ".jpg";

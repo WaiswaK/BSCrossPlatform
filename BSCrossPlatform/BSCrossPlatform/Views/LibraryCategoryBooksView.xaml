@@ -19,7 +19,7 @@
       >
           <ListView.ItemTemplate>
             <DataTemplate>
-              <ImageCell ImageSource="Binding thumb_url" Text="{ Binding book_title }"/>
+              <ImageCell ImageSource="{Binding thumb_url}" Text="{ Binding book_title }"/>
             </DataTemplate>
           </ListView.ItemTemplate>
         </ListView>

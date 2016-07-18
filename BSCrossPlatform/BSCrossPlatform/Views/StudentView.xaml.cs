@@ -11,10 +11,9 @@ namespace BSCrossPlatform.Views
 {
     public partial class StudentView : ContentPage
     {
-        /*public StudentView(UserModel user)
+        public StudentView(UserModel user)
         {
             InitializeComponent();
-            //BindingContext = new LoginPageViewModel();
             UserModel initial = user;
 
             char[] delimiter = { '.' };
@@ -35,7 +34,7 @@ namespace BSCrossPlatform.Views
             LibraryModel lib = DBRetrievalTask.GetLibrary(user.School.SchoolId);
             user.Library = lib;
 
-            BindingContext = new StudentPageViewModel(user);
+            BindingContext = new StudentViewModel(user);
 
             if (user.update_status == Constant.finished_update)
             {
@@ -50,23 +49,22 @@ namespace BSCrossPlatform.Views
                 }
             }
         }
-        */
-
-        //Temporary for testing UI
-        public StudentView(UserModel user)
-        {
-            InitializeComponent();
-            BindingContext = new StudentViewModel(user);
-        }
         //Methods triggers
         void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
         => ((ListView)sender).SelectedItem = null;
 
-        void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        async void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            //var monkey = ((ListView)sender).SelectedItem as Monkey;
-            //if (monkey == null)
-              //  return;
+            var module = ((ListView)sender).SelectedItem as ModulesModel;
+            if (module == null)
+                return;
+            else
+            {
+                if (module.Module.Equals("Subjects / Units"))
+                    await Navigation.PushAsync(new SubjectsView(module));
+                if (module.Module.Equals("Library (eBooks)"))
+                    await Navigation.PushAsync(new LibraryView(module));
+            }
         }
         private async void UpdateUser(string username, string password, List<int> oldIDs, List<SubjectModel> InstalledSubjects, UserModel currentUser)
         {

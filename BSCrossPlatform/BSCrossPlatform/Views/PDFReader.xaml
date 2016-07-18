@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:BSCrossPlatform.Views;assembly=BSCrossPlatform.Views"
   x:Class="BSCrossPlatform.Views.PDFReader">
   <ContentPage.Content>
-    <!--<local:CustomWebView Uri="BookPreview2-Ch18-Rel0417.pdf" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />-->
+    <local:CustomWebView Uri="{Binding PDFPath}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
   </ContentPage.Content>
 </ContentPage>

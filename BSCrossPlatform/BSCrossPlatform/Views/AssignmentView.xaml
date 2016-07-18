@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BSCrossPlatform.Views.AssignmentView">
+  <ContentPage.Content >
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="100"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <StackLayout Orientation="Horizontal" Grid.Row="0">
+        <Label Text= "{Binding AssignmentTitle}" HorizontalTextAlignment="Start" FontSize="30" VerticalTextAlignment="Center"/>
+      </StackLayout>
+      <StackLayout Grid.Row="1">
+        <DataTemplate>
+          <ListView RowHeight ="80"
+                ItemsSource ="{Binding AssignmentFiles}"
+                ItemTapped ="Handle_ItemTapped"
+                ItemSelected ="Handle_ItemSelected"
+      >
+            <ListView.ItemTemplate>
+              <DataTemplate>
+                <ImageCell ImageSource="pdf.gif" Text="{ Binding FileName }"/>
+              </DataTemplate>
+            </ListView.ItemTemplate>
+          </ListView>
+        </DataTemplate>
+      </StackLayout>
+      <StackLayout Grid.Row="2">
+        <DataTemplate>
+          <!-- <WebView Width ="*" Height="*" Name ="WebView2" Loaded="WebView2_Loaded"/>   -->
+        </DataTemplate>
+      </StackLayout>
+    </Grid>
+  </ContentPage.Content>
+</ContentPage>

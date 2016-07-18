@@ -21,8 +21,7 @@ namespace BSCrossPlatform.Droid.Tasks
         }
         public SQLiteConnection GetConnection()
         {
-            var conn = new SQLiteConnection(null, dbPath, true, null, null, null, null); //(path);
-            // Return the database connection 
+            var conn = new SQLiteConnection(new SQLite.Net.Platform.XamarinAndroid.SQLitePlatformAndroid(), dbPath, true, null, null, null, null); 
             return conn;
         }
         public async System.Threading.Tasks.Task InitializeDatabase()

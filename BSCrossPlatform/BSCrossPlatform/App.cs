@@ -23,14 +23,14 @@ namespace BSCrossPlatform
             };*/
             //MainPage = new Views.LoginView();
             Models.UserModel user = new Models.UserModel();
-            user.email = "wswkenneth7@gmail.com";
+            user.email = "eshuli.brainshare@gmail.com";
             user.full_names = "Waiswa Kenneth";
             user.Library = new Models.LibraryModel();
             user.subjects = new System.Collections.Generic.List<Models.SubjectModel>();
             user.School = new Models.SchoolModel("", "", 1);
 
 
-             MainPage = new Views.LoginView();
+            MainPage = new NavigationPage(new Views.LoginView());
             //MainPage = new Views.SubjectsView(user);
         }
 

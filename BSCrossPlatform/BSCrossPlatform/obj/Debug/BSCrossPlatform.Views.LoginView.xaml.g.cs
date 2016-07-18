@@ -23,14 +23,14 @@ namespace BSCrossPlatform.Views {
         private global::Xamarin.Forms.Entry password_tb;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Label messageLabel;
+        private global::Xamarin.Forms.Label LoadingMsg;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(LoginView));
             email_tb = this.FindByName<global::Xamarin.Forms.Entry>("email_tb");
             password_tb = this.FindByName<global::Xamarin.Forms.Entry>("password_tb");
-            messageLabel = this.FindByName<global::Xamarin.Forms.Label>("messageLabel");
+            LoadingMsg = this.FindByName<global::Xamarin.Forms.Label>("LoadingMsg");
         }
     }
 }
