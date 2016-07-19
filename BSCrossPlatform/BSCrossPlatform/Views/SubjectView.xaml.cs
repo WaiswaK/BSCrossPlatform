@@ -28,7 +28,7 @@ namespace BSCrossPlatform.Views
                 if (category.categoryName.Equals("Assignments"))
                     await Navigation.PushAsync(new AssignmentsView(category));
                 if (category.categoryName.Equals("Topics"))
-                    ;// await Navigation.PushAsync(new TopicsView(category));
+                     await Navigation.PushAsync(new FoldersView(category));
             }
         }
     }

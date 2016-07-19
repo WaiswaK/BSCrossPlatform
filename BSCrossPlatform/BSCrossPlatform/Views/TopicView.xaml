@@ -3,16 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BSCrossPlatform.Views.TopicView">
   <ContentPage.Content >
-    <Grid>
+    <Grid BackgroundColor="White">
       <Grid.RowDefinitions>
         <RowDefinition Height="100"/>
         <RowDefinition Height="*"/>
       </Grid.RowDefinitions>
       <StackLayout Orientation="Horizontal" Grid.Row="0">
-        <Label Text= "{Binding TopicName}" HorizontalTextAlignment="Start" FontSize="30" VerticalTextAlignment="Center"/>
+        <Label Text= "{Binding TopicName}" HorizontalTextAlignment="Start" FontSize="30" 
+               VerticalTextAlignment="Center" TextColor="Aqua"/>
       </StackLayout>
       <StackLayout Grid.Row="1">
-        <DataTemplate>
           <ListView RowHeight ="80"
                 ItemsSource ="{Binding TopicFiles}"
                 ItemTapped ="Handle_ItemTapped"
@@ -20,16 +20,15 @@
       >
             <ListView.ItemTemplate>
               <DataTemplate>
-                <ImageCell ImageSource="pdf.gif" Text="{ Binding FileName }"/>
+                <ImageCell ImageSource="pdf.gif" Text="{ Binding FileName }" TextColor="Black"/>
               </DataTemplate>
             </ListView.ItemTemplate>
           </ListView>
-        </DataTemplate>
       </StackLayout>
       <StackLayout Grid.Row="2">
-        <DataTemplate>
-          <!-- <WebView Width ="*" Height="*" Name ="WebView2" Loaded="WebView2_Loaded"/>   -->       
-        </DataTemplate>
+        <!--<DataTemplate>-->
+          <WebView x:Name="webView" HeightRequest="1000" WidthRequest="1000" Navigated="webviewNavigated" Navigating="webviewNavigating" />         
+        <!--</DataTemplate>-->
       </StackLayout>
     </Grid>
   </ContentPage.Content>

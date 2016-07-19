@@ -1,4 +1,5 @@
-﻿using BSCrossPlatform.Models;
+﻿using BSCrossPlatform.Core;
+using BSCrossPlatform.Models;
 using BSCrossPlatform.ViewModels;
 
 using Xamarin.Forms;
@@ -30,5 +31,31 @@ namespace BSCrossPlatform.Views
             string content = WebViewContentHelper.WrapHtml(new_notes, WebView.ActualWidth, WebView.ActualHeight);
             WebView.NavigateToString(content);
         }*/
+        /// <summary>
+		/// Called when the webview starts navigating. Displays the loading label.
+		/// </summary>
+		async void webviewNavigating(object sender, WebNavigatingEventArgs e)
+        {
+            //this.labelLoading.IsVisible = true; //display the label when navigating starts
+            string new_notes = await Core.NotesTask.Notes_loader(Current_Topic);
+            var WebView = (WebView)sender;
+            //string content = WebViewContentHelper.WrapHtml(all_notes, WebView.ActualWidth, WebView.ActualHeight);
+            string content = WebViewContentHelper.WrapHtml(new_notes, 1000, 100);
+            WebView.Source = content;
+        }
+
+        /// <summary>
+        /// Called when the webview finished navigating. Hides the loading label.
+        /// </summary>
+        async void webviewNavigated(object sender, WebNavigatedEventArgs e)
+        {
+            //this.labelLoading.IsVisible = false; //remove the loading indicator when navigating is finished
+            //this.labelLoading.IsVisible = true; //display the label when navigating starts
+            string new_notes = await Core.NotesTask.Notes_loader(Current_Topic);
+            var WebView = (WebView)sender;
+            //string content = WebViewContentHelper.WrapHtml(all_notes, WebView.ActualWidth, WebView.ActualHeight);
+            string content = WebViewContentHelper.WrapHtml(new_notes, 1000, 100);
+            WebView.Source = content;
+        }
     }
 }

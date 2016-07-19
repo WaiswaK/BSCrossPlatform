@@ -109,6 +109,7 @@
     <Content Include="Assets\units.png" />
     <Content Include="Assets\WideLogo.scale-240.png" />
     <Content Include="assignment.jpg" />
+    <Content Include="bg.jpg" />
     <Content Include="class_notes.png" />
     <Content Include="course.png" />
     <Content Include="ebooks.png" />

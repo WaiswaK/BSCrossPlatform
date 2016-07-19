@@ -130,6 +130,9 @@
     <AppxPackagedFile Include="D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.WinPhone\assignment.jpg">
       <PackagePath>assignment.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.WinPhone\bg.jpg">
+      <PackagePath>bg.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.WinPhone\Files.jpg">
       <PackagePath>Files.jpg</PackagePath>
     </AppxPackagedFile>

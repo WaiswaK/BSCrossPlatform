@@ -31,5 +31,24 @@ namespace BSCrossPlatform.Views
             string content = WebViewContentHelper.WrapHtml(new_notes, WebView.ActualWidth, WebView.ActualHeight);
             WebView.NavigateToString(content);
         }*/
+        /// <summary>
+		/// Called when the webview starts navigating. Displays the loading label.
+		/// </summary>
+		void webviewNavigating(object sender, WebNavigatingEventArgs e)
+        {
+            //this.labelLoading.IsVisible = true; //display the label when navigating starts
+        }
+
+        /// <summary>
+        /// Called when the webview finished navigating. Hides the loading label.
+        /// </summary>
+        void webviewNavigated(object sender, WebNavigatedEventArgs e)
+        {
+            //this.labelLoading.IsVisible = false; //remove the loading indicator when navigating is finished
+            //string new_notes = await Core.NotesTask.Notes_loader(Current_Topic);
+            //var WebView = (WebView)sender;
+            //string content = WebViewContentHelper.WrapHtml(new_notes, WebView.ActualWidth, WebView.ActualHeight);
+            //WebView.NavigateToString(content);
+        }
     }
 }

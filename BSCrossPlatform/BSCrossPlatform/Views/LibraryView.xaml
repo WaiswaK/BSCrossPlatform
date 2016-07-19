@@ -3,14 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BSCrossPlatform.Views.LibraryView">
   <ContentPage.Content >
-    <Grid>
+    <Grid BackgroundColor="White">
       <Grid.RowDefinitions>
         <RowDefinition Height="100"/>
         <RowDefinition Height="*"/>
       </Grid.RowDefinitions>
       <StackLayout Orientation="Horizontal" Grid.Row="0">
         <Image Source="library.png" />
-        <Label Text= "Library" HorizontalTextAlignment="Start" FontSize="30" VerticalTextAlignment="Center"/>
+        <Label Text= "Library" HorizontalTextAlignment="Start" FontSize="30" 
+               VerticalTextAlignment="Center" TextColor="Green"/>
       </StackLayout>
       <StackLayout Grid.Row="1">
         <ListView RowHeight ="80"
@@ -20,7 +21,7 @@
       >
           <ListView.ItemTemplate>
             <DataTemplate>
-              <ImageCell ImageSource="ebooks.png" Text="{ Binding category_name }"/>
+              <ImageCell ImageSource="ebooks.png" Text="{ Binding category_name }" TextColor="Black"/>
             </DataTemplate>
           </ListView.ItemTemplate>
         </ListView>

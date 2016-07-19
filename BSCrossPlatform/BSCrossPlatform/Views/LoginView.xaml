@@ -8,11 +8,11 @@
         <RowDefinition Height="100"/>
         <RowDefinition Height="*"/>
       </Grid.RowDefinitions>
-      <StackLayout Orientation="Horizontal" Grid.Row="0" BackgroundColor="#FF3530A2" Padding="15,20,15,0">
+      <StackLayout Orientation="Horizontal" Grid.Row="0" Padding="15,20,15,0">
         <Image Source="logo.png" />
         <Label Text= "BrainShare" HorizontalTextAlignment="Start" FontSize="50" VerticalTextAlignment="Center" TextColor="White"/>
       </StackLayout>
-      <StackLayout VerticalOptions="Center" Grid.Row="1" BackgroundColor="#FF3530A2" Padding="15,20,15,0">
+      <StackLayout VerticalOptions="Center" Grid.Row="1" Padding="15,20,15,0">
         <Label Text="Login" FontSize="30"/>
         <Entry x:Name="email_tb" Placeholder="Email" />
         <!--<Label Text="Password" FontSize="20"/>-->
