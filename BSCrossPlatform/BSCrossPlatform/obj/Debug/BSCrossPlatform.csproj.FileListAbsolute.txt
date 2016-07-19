@@ -61,3 +61,13 @@ D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Debug\B
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\bin\Debug\BSCrossPlatform.dll.mdb
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Debug\BSCrossPlatform.dll.mdb
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\bin\Debug\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Debug\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\bin\Debug\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Debug\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\bin\Debug\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Debug\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\bin\Debug\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Debug\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\bin\Debug\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Debug\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\bin\Debug\BSCrossPlatform.dll.mdb
