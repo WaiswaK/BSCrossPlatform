@@ -98,6 +98,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="backgroung.jpg" />
     <Content Include="Assets\Icons\library.png" />
     <Content Include="Assets\Icons\units.png" />
     <Content Include="Assets\library.png" />

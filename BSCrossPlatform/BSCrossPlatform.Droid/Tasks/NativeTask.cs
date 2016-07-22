@@ -50,13 +50,20 @@ namespace BSCrossPlatform.Droid.Tasks
         }
         public bool IsInternetConnectionAvailable()
         {
-            var connectivityManager = (ConnectivityManager)Application.Context.GetSystemService(Context.ConnectivityService);
-            var activeNetworkInfo = connectivityManager.ActiveNetworkInfo;
-            if (activeNetworkInfo != null && activeNetworkInfo.IsConnectedOrConnecting)
+            try
             {
-               return true;
+                var connectivityManager = (ConnectivityManager)Application.Context.GetSystemService(Context.ConnectivityService);
+                var activeNetworkInfo = connectivityManager.ActiveNetworkInfo;
+                if (activeNetworkInfo != null && activeNetworkInfo.IsConnectedOrConnecting)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            else
+            catch
             {
                 return false;
             }

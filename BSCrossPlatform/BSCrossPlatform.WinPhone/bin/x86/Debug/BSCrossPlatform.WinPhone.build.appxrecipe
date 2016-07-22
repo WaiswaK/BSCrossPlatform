@@ -67,6 +67,21 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\SQLite.WP81\3.13.0\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.WinPhone\backgroung.jpg">
+      <PackagePath>backgroung.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.WinPhone\assignment.jpg">
+      <PackagePath>assignment.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.WinPhone\bg.jpg">
+      <PackagePath>bg.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.WinPhone\Files.jpg">
+      <PackagePath>Files.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.WinPhone\video-library.jpg">
+      <PackagePath>video-library.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.WinPhone\Assets\Icons\library.png">
       <PackagePath>Assets\Icons\library.png</PackagePath>
     </AppxPackagedFile>
@@ -126,18 +141,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.WinPhone\Video.png">
       <PackagePath>Video.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.WinPhone\assignment.jpg">
-      <PackagePath>assignment.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.WinPhone\bg.jpg">
-      <PackagePath>bg.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.WinPhone\Files.jpg">
-      <PackagePath>Files.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.WinPhone\video-library.jpg">
-      <PackagePath>video-library.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.WinPhone\pdf.gif">
       <PackagePath>pdf.gif</PackagePath>

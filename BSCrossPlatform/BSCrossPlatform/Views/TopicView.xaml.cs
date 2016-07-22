@@ -40,8 +40,15 @@ namespace BSCrossPlatform.Views
             string new_notes = await Core.NotesTask.Notes_loader(Current_Topic);
             var WebView = (WebView)sender;
             //string content = WebViewContentHelper.WrapHtml(all_notes, WebView.ActualWidth, WebView.ActualHeight);
-            string content = WebViewContentHelper.WrapHtml(new_notes, 1000, 100);
-            WebView.Source = content;
+            //string content = WebViewContentHelper.WrapHtml(new_notes, 1000, 100);
+
+            //Just added here
+            var htmlSource = new HtmlWebViewSource();
+            htmlSource.Html = new_notes;
+            //htmlSource.Html = content;
+            WebView.Source = htmlSource;
+
+            //WebView.Source = content;
         }
 
         /// <summary>
@@ -54,8 +61,14 @@ namespace BSCrossPlatform.Views
             string new_notes = await Core.NotesTask.Notes_loader(Current_Topic);
             var WebView = (WebView)sender;
             //string content = WebViewContentHelper.WrapHtml(all_notes, WebView.ActualWidth, WebView.ActualHeight);
-            string content = WebViewContentHelper.WrapHtml(new_notes, 1000, 100);
-            WebView.Source = content;
+           // string content = WebViewContentHelper.WrapHtml(new_notes, 1000, 100);
+            //WebView.Source = content;
+
+            //Just added here
+            var htmlSource = new HtmlWebViewSource();
+            htmlSource.Html = new_notes;
+            //htmlSource.Html = content;
+            WebView.Source = htmlSource;
         }
     }
 }

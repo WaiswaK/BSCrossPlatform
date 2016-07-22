@@ -116,10 +116,10 @@
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icon.png" />
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
@@ -130,43 +130,40 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\assignment.jpg" />
+    <AndroidResource Include="Resources\drawable\assignment.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\bg.jpg" />
+    <AndroidResource Include="Resources\drawable\class_notes.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\class_notes.png" />
+    <AndroidResource Include="Resources\drawable\course.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\course.png" />
+    <AndroidResource Include="Resources\drawable\ebooks.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\ebooks.png" />
+    <AndroidResource Include="Resources\drawable\Files.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\Files.jpg" />
+    <AndroidResource Include="Resources\drawable\library.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\library.png" />
+    <AndroidResource Include="Resources\drawable\logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\logo.png" />
+    <AndroidResource Include="Resources\drawable\pdf.gif" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\pdf.gif" />
+    <AndroidResource Include="Resources\drawable\topic.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\topic.png" />
+    <AndroidResource Include="Resources\drawable\units.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\units.png" />
+    <AndroidResource Include="Resources\drawable\Video.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\Video.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\video-library.jpg" />
+    <AndroidResource Include="Resources\drawable\video-library.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
