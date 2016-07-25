@@ -1,19 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BSCrossPlatform.Views.AssignmentView">
-  <ContentPage.Content >
-    <Grid BackgroundColor="White">
+             x:Class="BSCrossPlatform.Views.AssignmentView"
+             BackgroundImage ="background.jpg">
+  <ContentPage.Content>
+    <Grid>
       <Grid.RowDefinitions>
         <RowDefinition Height="100"/>
         <RowDefinition Height="*"/>
       </Grid.RowDefinitions>
       <StackLayout Orientation="Horizontal" Grid.Row="0">
         <Label Text= "{Binding AssignmentTitle}" HorizontalTextAlignment="Start" FontSize="30" 
-               VerticalTextAlignment="Center" TextColor="Aqua"/>
+               VerticalTextAlignment="Center" TextColor="Green"/>
       </StackLayout>
       <StackLayout Grid.Row="1">
-        <DataTemplate>
+        <!--<DataTemplate>-->
           <ListView RowHeight ="80"
                 ItemsSource ="{Binding AssignmentFiles}"
                 ItemTapped ="Handle_ItemTapped"
@@ -25,13 +26,16 @@
               </DataTemplate>
             </ListView.ItemTemplate>
           </ListView>
-        </DataTemplate>
+        <!--</DataTemplate>-->
       </StackLayout>
       <StackLayout Grid.Row="2">
-        <DataTemplate>
+        <!--<DataTemplate>-->
           <!-- <WebView Width ="*" Height="*" Name ="WebView2" Loaded="WebView2_Loaded"/>   -->
-          <WebView x:Name="webView" WidthRequest="1000" HeightRequest="1000" Navigated="webviewNavigated" Navigating="webviewNavigating" />
-        </DataTemplate>
+          <WebView x:Name="webView" 
+                   Source="{Binding NotesHtmlWebViewSource}"
+                   HeightRequest="1000"
+                   WidthRequest="1000"/>
+        <!--</DataTemplate>-->
       </StackLayout>
     </Grid>
   </ContentPage.Content>

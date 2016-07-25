@@ -15,9 +15,9 @@ namespace BSCrossPlatform.Views
         {
             InitializeComponent();
         }
-
         void OnLoginButtonClicked(object sender, EventArgs e)
         {
+            IsBusy = true;
             LoadingMsg.Text = Message.User_Validation;
             LoadingMsg.IsVisible = true;
             Login();
@@ -33,22 +33,38 @@ namespace BSCrossPlatform.Views
         public async void Login()
         {
             await CommonTask.InitializeDatabase();
-            if (DependencyService.Get<Interfaces.ITask>().IsInternetConnectionAvailable())
+            try
             {
-                OnlineExperience();
+                if (email_tb.Text.Equals(null) || password_tb.Text.Equals(null))
+                {
+                    
+                }
+                else
+                {
+                    if (DependencyService.Get<Interfaces.ITask>().IsInternetConnectionAvailable())
+                    {
+                        OnlineExperience();
+                    }
+                    else
+                    {
+                        OfflineExperience();
+                    }
+                }                    
             }
-            else
+            catch
             {
-                OfflineExperience();
+                await DisplayAlert(Message.Login_Header, Message.NoLoginDetails, Message.Ok);
+                LoadingMsg.IsVisible = false;
+                IsBusy = false;
             }
-
         }
-        private void OfflineExperience()
+        private async void OfflineExperience()
         {
             List<User> users = DBRetrievalTask.SelectAllUsers();
             if (users == null)
-            {
-                //var message = DisplayAlert(Message.Login_Message_Fail, Message.Login_Header);
+            {              
+                await DisplayAlert(Message.Login_Header, Message.Login_Message_Fail, Message.Ok);
+                IsBusy = false;
                 LoadingMsg.IsVisible = false;
             }
             else
@@ -89,9 +105,15 @@ namespace BSCrossPlatform.Views
 
                 if (found == true && success == false)
                 {
+                    await DisplayAlert(Message.Login_Header, Message.Wrong_User_details, Message.Ok);
+                    IsBusy = false;
+                    LoadingMsg.IsVisible = false;
                 }
                 if (found == false)
                 {
+                    await DisplayAlert(Message.Login_Header, Message.Login_Message_Fail, Message.Ok);
+                    IsBusy = false;
+                    LoadingMsg.IsVisible = false;
                 }
             }
         }
@@ -113,6 +135,8 @@ namespace BSCrossPlatform.Views
                 {
                     if (user.e_mail.Equals(email_tb.Text) && user.password.Equals(password_tb.Text))
                     {
+                        LoadingMsg.Text = Message.Update_Checking;
+                        LoadingMsg.IsVisible = true;
                         loggedIn.email = user.e_mail;
                         loggedIn.password = user.password;
                         loggedIn.School = DBRetrievalTask.GetSchool(user.School_id);
@@ -147,6 +171,7 @@ namespace BSCrossPlatform.Views
             }
             catch
             {
+                IsBusy = false;
                 LoadingMsg.IsVisible = false;
             }
         }
@@ -184,13 +209,16 @@ namespace BSCrossPlatform.Views
                 }
                 catch
                 {
+                    IsBusy = false;
                     LoadingMsg.IsVisible = false;
                 }
 
             }
             else
             {
-                LoadingMsg.IsVisible = false;
+               await DisplayAlert(Message.Login_Header, Message.Wrong_User_details, Message.Ok);
+               IsBusy = false;
+               LoadingMsg.IsVisible = false;
             }
         }
         private async void AuthenticateUser(UserModel user)
@@ -255,6 +283,7 @@ namespace BSCrossPlatform.Views
                 {
                     if (ModelTask.oldSubjects() == null)
                     {
+                        await DisplayAlert(Message.Content_Header, Message.Offline_Message, Message.Ok);
                     }
                     else
                     {
@@ -266,7 +295,9 @@ namespace BSCrossPlatform.Views
             }
             else
             {
-
+                await DisplayAlert(Message.No_Subject_Header, Message.No_Subject, Message.Ok);
+                IsBusy = false;
+                LoadingMsg.IsVisible = false;
             }
         }
     }

@@ -17,10 +17,12 @@
         public static string File_Access_Message = "Would you like to download this file for offline access?";
         public static string Yes = "Yes";
         public static string No = "No";
+        public static string Ok = "OK";
         public static string Download_Error = "An error occured while downloading";
         public static string Download_Header = "Download";
         public static string No_Subject = "Looks like you have not added any units/subjects to your account. Login via the BrainShare website and add them first before using the app. Thanks";
         public static string No_Subject_Header = "Missing Course Units / Subjects";
         public static string Offline_File_Unavailable = "This file is only available online, you need an internet Connection to view it";
+        public static string NoLoginDetails = "Please enter all required login details";
     }
 }

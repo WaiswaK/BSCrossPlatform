@@ -18,10 +18,11 @@ namespace BSCrossPlatform.Views
         {
             var assignment = ((ListView)sender).SelectedItem as AssignmentModel;
             if (assignment == null)
-                return; //Move to nextpage
-            //var item = e.ClickedItem;
-            //FolderModel _folder = ((FolderModel)item);
-            //Frame.Navigate(typeof(TopicsPage), _folder);
+                return;
+            else
+            {
+                string content = Core.WebViewContentHelper.WrapHtml(assignment.description, 100, 100);
+            }          
         }
     }
 }

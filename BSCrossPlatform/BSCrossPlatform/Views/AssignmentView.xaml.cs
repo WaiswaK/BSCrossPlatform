@@ -7,12 +7,18 @@ namespace BSCrossPlatform.Views
 {
     public partial class AssignmentView : ContentPage
     {
-        string all_notes = null;
-        public AssignmentView(AssignmentModel assignment)
+        //string all_notes = null;
+        /*public AssignmentView(AssignmentModel assignment)
         {
             InitializeComponent();
             BindingContext = new AssignmentViewModel(assignment);
             all_notes = assignment.description;
+        }*/
+        public AssignmentView(AssignmentModel assignment, string assignment_notes)
+        {
+            InitializeComponent();
+            BindingContext = new AssignmentViewModel(assignment, assignment_notes);
+            //all_notes = assignment.description;
         }
         void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
         => ((ListView)sender).SelectedItem = null;
@@ -34,7 +40,7 @@ namespace BSCrossPlatform.Views
         /// <summary>
 		/// Called when the webview starts navigating. Displays the loading label.
 		/// </summary>
-		void webviewNavigating(object sender, WebNavigatingEventArgs e)
+		/*void webviewNavigating(object sender, WebNavigatingEventArgs e)
         {
             //this.labelLoading.IsVisible = true; //display the label when navigating starts
         }
@@ -49,6 +55,6 @@ namespace BSCrossPlatform.Views
             //var WebView = (WebView)sender;
             //string content = WebViewContentHelper.WrapHtml(new_notes, WebView.ActualWidth, WebView.ActualHeight);
             //WebView.NavigateToString(content);
-        }
+        }*/
     }
 }

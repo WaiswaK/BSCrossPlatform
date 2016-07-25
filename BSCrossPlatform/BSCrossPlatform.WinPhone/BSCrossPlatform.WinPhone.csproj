@@ -98,7 +98,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="backgroung.jpg" />
+    <Content Include="background.jpg" />
     <Content Include="Assets\Icons\library.png" />
     <Content Include="Assets\Icons\units.png" />
     <Content Include="Assets\library.png" />
@@ -119,6 +119,7 @@
     <Content Include="logo.png" />
     <Content Include="pdf.gif" />
     <Content Include="topic.png" />
+    <Content Include="topics.png" />
     <Content Include="units.png" />
     <Content Include="video-library.jpg" />
     <Content Include="Video.png" />

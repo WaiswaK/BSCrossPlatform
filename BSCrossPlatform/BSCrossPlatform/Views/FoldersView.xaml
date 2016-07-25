@@ -1,16 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BSCrossPlatform.Views.FoldersView">
-  <ContentPage.Content >
-    <Grid BackgroundColor="White">
+             x:Class="BSCrossPlatform.Views.FoldersView"
+             BackgroundImage ="background.jpg">
+  <ContentPage.Content>
+    <Grid>
       <Grid.RowDefinitions>
         <RowDefinition Height="100"/>
         <RowDefinition Height="*"/>
       </Grid.RowDefinitions>
       <StackLayout Orientation="Horizontal" Grid.Row="0">
-        <Label Text= "{Binding TopicTitle}" HorizontalTextAlignment="Start"
-               FontSize="30" VerticalTextAlignment="Center" TextColor="Aqua"/>
+        <Image Source="topic.png" />
+        <Label Text= "Topics" HorizontalTextAlignment="Start"
+               FontSize="30" VerticalTextAlignment="Center" TextColor="Green"/>
       </StackLayout>
       <StackLayout Grid.Row="1">
         <ListView RowHeight ="80"
