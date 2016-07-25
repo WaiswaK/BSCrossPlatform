@@ -17,8 +17,12 @@ namespace BSCrossPlatform.Views {
     public partial class AssignmentView : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.WebView webView;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(AssignmentView));
+            webView = this.FindByName<global::Xamarin.Forms.WebView>("webView");
         }
     }
 }

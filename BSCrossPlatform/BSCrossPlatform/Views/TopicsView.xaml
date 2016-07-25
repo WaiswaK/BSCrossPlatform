@@ -21,7 +21,7 @@
       >
           <ListView.ItemTemplate>
             <DataTemplate>
-              <ImageCell ImageSource="class_notes.png" Text="{ Binding TopicTitle }" TextColor="Black"/>
+              <ImageCell ImageSource="classnotes.png" Text="{ Binding TopicTitle }" TextColor="Black"/>
             </DataTemplate>
           </ListView.ItemTemplate>
         </ListView>

@@ -111,7 +111,7 @@
     <Content Include="Assets\WideLogo.scale-240.png" />
     <Content Include="assignment.jpg" />
     <Content Include="bg.jpg" />
-    <Content Include="class_notes.png" />
+    <Content Include="classnotes.png" />
     <Content Include="course.png" />
     <Content Include="ebooks.png" />
     <Content Include="Files.jpg" />
@@ -121,7 +121,7 @@
     <Content Include="topic.png" />
     <Content Include="topics.png" />
     <Content Include="units.png" />
-    <Content Include="video-library.jpg" />
+    <Content Include="videolibrary.jpg" />
     <Content Include="Video.png" />
   </ItemGroup>
   <ItemGroup>
