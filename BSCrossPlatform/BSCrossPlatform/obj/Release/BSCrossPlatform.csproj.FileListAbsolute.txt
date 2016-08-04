@@ -29,7 +29,6 @@ D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Release
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.Views.FoldersView.xaml.g.cs
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.dll
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.pdb
-D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.dll.mdb
-D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\bin\Release\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.Views.TopicAttachmentView.xaml.g.cs
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.dll.mdb
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\bin\Release\BSCrossPlatform.dll.mdb

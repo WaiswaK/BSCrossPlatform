@@ -2,6 +2,10 @@ BSCrossPlatform.Droid.MainActivity, BSCrossPlatform.Droid;md58de5f9fecb8eca401bc
 BSCrossPlatform.Droid.MainActivity, BSCrossPlatform.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md58de5f9fecb8eca401bcfdb5eda89f26d.MainActivity
 BSCrossPlatform.Droid.MainActivity;md58de5f9fecb8eca401bcfdb5eda89f26d.MainActivity
 bscrossplatform.droid.MainActivity;md58de5f9fecb8eca401bcfdb5eda89f26d.MainActivity
+BSCrossPlatform.Droid.Tasks.CustomWebViewRenderer, BSCrossPlatform.Droid;md57cb78991e8c6b46f4894c6d7a5f57139.CustomWebViewRenderer
+BSCrossPlatform.Droid.Tasks.CustomWebViewRenderer, BSCrossPlatform.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57cb78991e8c6b46f4894c6d7a5f57139.CustomWebViewRenderer
+BSCrossPlatform.Droid.Tasks.CustomWebViewRenderer;md57cb78991e8c6b46f4894c6d7a5f57139.CustomWebViewRenderer
+bscrossplatform.droid.tasks.CustomWebViewRenderer;md57cb78991e8c6b46f4894c6d7a5f57139.CustomWebViewRenderer
 Android.Support.Design.Widget.Snackbar/SnackbarActionClickImplementor, Xamarin.Android.Support.Design;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar+SnackbarActionClickImplementor, Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar.SnackbarActionClickImplementor;android.support.design.widget.Snackbar_SnackbarActionClickImplementor

@@ -11,7 +11,8 @@ namespace BSCrossPlatform.iOS.Tasks
     {
         #region Declarations
         string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-        #endregion  
+        #endregion
+        #region Implementations
         public async Task ForceImageDownloader(string filepath, string fileName, string extension)
         {
             var webClient = new WebClient();
@@ -39,17 +40,28 @@ namespace BSCrossPlatform.iOS.Tasks
             string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             return path;
         }
-
         public bool IsInternetConnectionAvailable()
         {
             throw new NotImplementedException();
         }
-
         public async Task<string> LocalBase64(string image_path, string fileformat)
         {
             if (!File.Exists(image_path)) return null;
             var bytes = File.ReadAllBytes(image_path);
             return Convert.ToBase64String(bytes);
         }
+        public async Task<bool> FileExists(string path)
+        {
+            if (!File.Exists(path))
+                return false;
+            else return true;
+        }
+        public async Task DownloadFile(string filepath, string fileName)
+        {
+            //throw new NotImplementedException();
+            var destination = Path.Combine(documentsPath, fileName + Core.Constant.PDF_extension);
+            await new WebClient().DownloadFileTaskAsync(new Uri(filepath), destination);
+        }
+        #endregion
     }
 }

@@ -17,10 +17,11 @@
         <Entry x:Name="email_tb" Placeholder="Email" />
         <!--<Label Text="Password" FontSize="20"/>-->
         <Entry x:Name="password_tb" IsPassword="true" Placeholder="Password"/>
-        <Button Text="Sign In" Clicked="OnLoginButtonClicked" />
-        <Label Text="OR" HorizontalTextAlignment="Center" FontSize="20"/>
-        <Button Text="Create an Account" Clicked="OnCreateButtonClicked"/>
-        <Button Text ="Forgot your Password?" 
+        <Button x:Name ="login_btn" Text="Sign In" Clicked="OnLoginButtonClicked"/>
+        <Label Text="OR" HorizontalTextAlignment="Center" FontSize="20" />
+        <Button x:Name ="create_btn" Text="Create an Account" Clicked="OnCreateButtonClicked"/>
+        <Button x:Name ="forget_btn" 
+                Text ="Forgot your Password?" 
                 TextColor="Gray"
                 BorderColor="#FF3530A2" Clicked="OnForgetClicked"/>
         

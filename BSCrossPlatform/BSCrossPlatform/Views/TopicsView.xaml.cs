@@ -21,18 +21,16 @@ namespace BSCrossPlatform.Views
                 return;
             else
             {
-                #region RecentlyAdded
                 string new_notes = await Core.NotesTask.Notes_loader(notes);
                 string content = Core.WebViewContentHelper.WrapHtml(new_notes, 100, 100);
-                await Navigation.PushAsync(new TopicView(notes, content));
-
-                /*await Navigation.PushAsync(new TopicView(notes,
-                    Core.WebViewContentHelper.WrapHtml
-                    (await Core.NotesTask.Notes_loader(notes)
-                    , 100, 100)));*/
-
-                #endregion
-                //await Navigation.PushAsync(new TopicView(notes));
+                if (notes.Files.Count == 0)
+                {
+                    await Navigation.PushAsync(new TopicView(notes, content));
+                }
+                else
+                {
+                    await Navigation.PushAsync(new TopicAttachmentView(notes, content));
+                }
             }
         }
     }

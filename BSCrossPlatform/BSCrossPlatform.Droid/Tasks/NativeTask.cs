@@ -14,7 +14,8 @@ namespace BSCrossPlatform.Droid.Tasks
     {
         #region Declarations
         string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-        #endregion     
+        #endregion
+        #region Implementations
         public async Task ForceImageDownloader(string filepath, string fileName, string extension)
         {
             var webClient = new WebClient();
@@ -68,5 +69,18 @@ namespace BSCrossPlatform.Droid.Tasks
                 return false;
             }
         }
+        public async Task<bool> FileExists(string path)
+        {
+            if (!File.Exists(path))
+                return false;
+            else return true;
+        }
+        public async Task DownloadFile(string filepath, string fileName)
+        {
+            //throw new NotImplementedException();
+            var destination = Path.Combine(documentsPath, fileName + Core.Constant.PDF_extension);
+            await new WebClient().DownloadFileTaskAsync(new System.Uri(filepath), destination);
+        }
+        #endregion
     }
 }

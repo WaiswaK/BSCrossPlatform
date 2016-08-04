@@ -15,6 +15,7 @@ namespace BSCrossPlatform.Views
         {
             InitializeComponent();
             UserModel initial = user;
+            List<SubjectModel> all_subjects = new List<SubjectModel>();
 
             char[] delimiter = { '.' };
             List<SubjectModel> subjectsNew = new List<SubjectModel>();
@@ -30,6 +31,8 @@ namespace BSCrossPlatform.Views
                 subjectsNew.Add(subject);
             }
             user.subjects = subjectsNew;
+            all_subjects = user.subjects;
+            user.subjects = ModelTask.DisplayableSubjects(user.subjects);
 
             LibraryModel lib = DBRetrievalTask.GetLibrary(user.School.SchoolId);
             user.Library = lib;
@@ -40,11 +43,11 @@ namespace BSCrossPlatform.Views
             {
                 if (DependencyService.Get<Interfaces.ITask>().IsInternetConnectionAvailable())
                 {
-                    UpdateUser(initial.email, initial.password, DBRetrievalTask.SubjectIdsForUser(initial.email), user.subjects, user);
+                    UpdateUser(initial.email, initial.password, DBRetrievalTask.SubjectIdsForUser(initial.email), all_subjects, user);
                     if (user.NotesImagesDownloading == false)
                     {
                         user.NotesImagesDownloading = true;
-                        NotesTask.GetNotesImagesSubjectsAsync(user.subjects);
+                        NotesTask.GetNotesImagesSubjectsAsync(all_subjects);
                     }
                 }
             }

@@ -10,10 +10,11 @@
         <RowDefinition Height="*"/>
       </Grid.RowDefinitions>
       <StackLayout Orientation="Horizontal" Grid.Row="0">
-        <Label Text= "{Binding VideoTitle}" HorizontalTextAlignment="Start" 
-               FontSize="30" 
+        <Label Text= "{Binding VideoTitle}" HorizontalTextAlignment="Start"
+               FontSize="20"
                VerticalTextAlignment="Center"
-               TextColor="Green"/>
+               TextColor="Green" 
+               LineBreakMode="WordWrap"/>
       </StackLayout>
       <StackLayout Grid.Row="1">
         <WebView x:Name ="webView"/>

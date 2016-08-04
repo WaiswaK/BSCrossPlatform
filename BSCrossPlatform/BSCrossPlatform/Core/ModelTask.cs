@@ -310,6 +310,22 @@ namespace BSCrossPlatform.Core
             }
             return final;
         }
+        public static List<SubjectModel> DisplayableSubjects(List<SubjectModel> initial_subjects)
+        {
+            List<SubjectModel> final_subjects = initial_subjects;
+            foreach (var subject in initial_subjects.ToList())
+            {
+                int assignments = subject.assignments.Count;
+                int files = subject.files.Count;
+                int topics = subject.topics.Count;
+                int videos = subject.videos.Count;
+                if (assignments == 0 && files == 0 && topics == 0 && videos == 0)
+                {
+                    final_subjects.Remove(subject);
+                }
+            }
+            return final_subjects;
+        }
         #endregion
         #region Topics Methods
         private static TopicModel TopicChange(TopicModel newTopic, TopicModel oldTopic)

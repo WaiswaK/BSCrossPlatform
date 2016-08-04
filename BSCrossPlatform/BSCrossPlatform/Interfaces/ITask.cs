@@ -11,5 +11,7 @@ namespace BSCrossPlatform.Interfaces
         string imagePath(string imagename);
         #endregion
         bool IsInternetConnectionAvailable();
+        Task<bool> FileExists(string path);
+        Task DownloadFile(string filepath, string fileName);
     }
 }

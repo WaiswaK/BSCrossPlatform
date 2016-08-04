@@ -88,6 +88,7 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Tasks\CustomWebViewRenderer.cs" />
     <Compile Include="Tasks\DatabaseTask.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
@@ -156,7 +157,7 @@
     <BundleResource Include="Resources\assignment.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\class_notes.png" />
+    <BundleResource Include="Resources\classnotes.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\course.png" />
@@ -186,7 +187,7 @@
     <BundleResource Include="Resources\Video.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\video-library.jpg" />
+    <BundleResource Include="Resources\videolibrary.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\background.jpg" />

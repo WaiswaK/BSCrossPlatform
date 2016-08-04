@@ -11,7 +11,7 @@
       </Grid.RowDefinitions>
       <StackLayout Orientation="Horizontal" Grid.Row="0">
         <Image Source="video_library.jpg" />
-        <Label Text= "Featured Videos" HorizontalTextAlignment="Start" FontSize="30" 
+        <Label Text= "Featured Videos" HorizontalTextAlignment="Start" FontSize="20" 
                VerticalTextAlignment="Center" TextColor="Green"/>
       </StackLayout>
       <StackLayout Grid.Row="1">

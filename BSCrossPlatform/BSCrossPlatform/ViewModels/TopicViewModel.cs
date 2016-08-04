@@ -24,7 +24,6 @@ namespace BSCrossPlatform.ViewModels
             get { return _notes; }
             set { _notes = value; }
         }*/
-
         //Method to get notes that will be displayed in view model
         /*public async System.Threading.Tasks.Task<string> Load_Notes(TopicModel topic)
         {

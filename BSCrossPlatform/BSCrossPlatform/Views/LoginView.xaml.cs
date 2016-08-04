@@ -18,10 +18,25 @@ namespace BSCrossPlatform.Views
         void OnLoginButtonClicked(object sender, EventArgs e)
         {
             IsBusy = true;
+            #region Deactivate Controls
+            email_tb.IsEnabled = false;
+            password_tb.IsEnabled = false;
+            login_btn.IsEnabled = false;
+            create_btn.IsEnabled = false;
+            forget_btn.IsEnabled = false;
+            #endregion
             LoadingMsg.Text = Message.User_Validation;
             LoadingMsg.IsVisible = true;
             Login();
         }
+        void ReActivate_Controls()
+        {
+            email_tb.IsEnabled = true;
+            password_tb.IsEnabled = true;
+            login_btn.IsEnabled = true;
+            create_btn.IsEnabled = true;
+            forget_btn.IsEnabled = true;
+        }        
         async void OnCreateButtonClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new BrowserView(Core.Constant.RegisterUri));
@@ -56,6 +71,7 @@ namespace BSCrossPlatform.Views
                 await DisplayAlert(Message.Login_Header, Message.NoLoginDetails, Message.Ok);
                 LoadingMsg.IsVisible = false;
                 IsBusy = false;
+                ReActivate_Controls();
             }
         }
         private async void OfflineExperience()
@@ -66,6 +82,7 @@ namespace BSCrossPlatform.Views
                 await DisplayAlert(Message.Login_Header, Message.Login_Message_Fail, Message.Ok);
                 IsBusy = false;
                 LoadingMsg.IsVisible = false;
+                ReActivate_Controls();
             }
             else
             {
@@ -108,12 +125,14 @@ namespace BSCrossPlatform.Views
                     await DisplayAlert(Message.Login_Header, Message.Wrong_User_details, Message.Ok);
                     IsBusy = false;
                     LoadingMsg.IsVisible = false;
+                    ReActivate_Controls();
                 }
                 if (found == false)
                 {
                     await DisplayAlert(Message.Login_Header, Message.Login_Message_Fail, Message.Ok);
                     IsBusy = false;
                     LoadingMsg.IsVisible = false;
+                    ReActivate_Controls();
                 }
             }
         }
@@ -173,6 +192,7 @@ namespace BSCrossPlatform.Views
             {
                 IsBusy = false;
                 LoadingMsg.IsVisible = false;
+                ReActivate_Controls();
             }
         }
         private async void CreateUser(Newtonsoft.Json.Linq.JObject loginObject, string username, string password)
@@ -211,6 +231,7 @@ namespace BSCrossPlatform.Views
                 {
                     IsBusy = false;
                     LoadingMsg.IsVisible = false;
+                    ReActivate_Controls();
                 }
 
             }
@@ -219,6 +240,7 @@ namespace BSCrossPlatform.Views
                await DisplayAlert(Message.Login_Header, Message.Wrong_User_details, Message.Ok);
                IsBusy = false;
                LoadingMsg.IsVisible = false;
+                ReActivate_Controls();
             }
         }
         private async void AuthenticateUser(UserModel user)
@@ -298,6 +320,7 @@ namespace BSCrossPlatform.Views
                 await DisplayAlert(Message.No_Subject_Header, Message.No_Subject, Message.Ok);
                 IsBusy = false;
                 LoadingMsg.IsVisible = false;
+                ReActivate_Controls();
             }
         }
     }

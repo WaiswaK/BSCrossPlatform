@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BSCrossPlatform.Views.TopicAttachmentView"
+             BackgroundImage ="background.jpg">
+  
+  <ContentPage.Content>
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="100"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <StackLayout Orientation="Horizontal" Grid.Row="0">
+        <Image Source="topicnotes.png" />
+        <Label Text= "{ Binding TopicName }" HorizontalTextAlignment="Start"
+               FontSize="20" VerticalTextAlignment="Center" TextColor="Green"
+               LineBreakMode="WordWrap"/>
+      </StackLayout>
+      <StackLayout Grid.Row="1" >
+        
+        <Button Text="View Notes" Clicked="OnViewClicked" TextColor="Black"/>
+        
+        <!--<ProgressBar x:Name="downloadProgress" IsVisible="False" Progress="0.0" />-->
+                  
+        <Label Text="Attachments" FontSize="20" TextColor="Black" VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Start"/>
+
+        <ListView RowHeight ="80"
+                ItemsSource ="{Binding TopicFiles}"
+                ItemTapped ="Handle_ItemTapped"
+                ItemSelected ="Handle_ItemSelected"
+      >
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ImageCell ImageSource="pdf.gif" Text="{ Binding FileName }" TextColor="Black"/>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+        
+      </StackLayout>
+    </Grid>
+  </ContentPage.Content>
+</ContentPage>

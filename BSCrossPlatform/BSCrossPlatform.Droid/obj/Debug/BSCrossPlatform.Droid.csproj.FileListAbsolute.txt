@@ -1,4 +1,3 @@
-C:\Users\Kenneth\OneDrive\Documents\Visual Studio 2015\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Droid\obj\Debug\BSCrossPlatform.Droid.csprojResolveAssemblyReference.cache
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Droid\bin\Debug\BSCrossPlatform.Droid.dll
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Droid\bin\Debug\BSCrossPlatform.Droid.pdb
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Droid\bin\Debug\BrainShare.BrainShare.apk

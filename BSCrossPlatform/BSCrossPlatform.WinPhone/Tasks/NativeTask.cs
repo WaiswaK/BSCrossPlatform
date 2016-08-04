@@ -131,6 +131,35 @@ namespace BSCrossPlatform.WinPhone.Tasks
             }
             return base64;
         }
+        public async Task<bool> FileExists(string path)
+        {
+            bool exist = false;
+            try
+            {
+                StorageFile file = await appFolder.GetFileAsync(path);
+                exist = true;
+            }
+            catch
+            {
+                exist = false;
+            }
+            return exist;
+        }
+        public async Task DownloadFile(string filepath, string fileName)
+        {
+            StorageFile storageFile = await appFolder.CreateFileAsync(fileName + Core.Constant.PDF_extension, CreationCollisionOption.ReplaceExisting);
+            string newpath = Core.Constant.BaseUri + filepath;
+            try
+            {
+                var downloader = new Windows.Networking.BackgroundTransfer.BackgroundDownloader();
+                Uri uri = new Uri(newpath);
+                Windows.Networking.BackgroundTransfer.DownloadOperation op = downloader.CreateDownload(uri, storageFile);
+                await op.StartAsync();              
+            }
+            catch 
+            {
+            }
+        }
         #endregion
     }
 }

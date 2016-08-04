@@ -12,7 +12,7 @@
       <StackLayout Orientation="Horizontal" Grid.Row="0">
         <Image Source="topic.png" />
         <Label Text= "Topics" HorizontalTextAlignment="Start"
-               FontSize="30" VerticalTextAlignment="Center" TextColor="Green"/>
+               FontSize="20" VerticalTextAlignment="Center" TextColor="Green"/>
       </StackLayout>
       <StackLayout Grid.Row="1">
         <ListView RowHeight ="80"
