@@ -17,8 +17,40 @@ namespace BSCrossPlatform.Views {
     public partial class SubjectView : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label TopicsLabel;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ListView Topics;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label FilesLabel;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ListView Files;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label AssignmentLabel;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ListView Assignments;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label VideosLabel;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ListView Videos;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(SubjectView));
+            TopicsLabel = this.FindByName<global::Xamarin.Forms.Label>("TopicsLabel");
+            Topics = this.FindByName<global::Xamarin.Forms.ListView>("Topics");
+            FilesLabel = this.FindByName<global::Xamarin.Forms.Label>("FilesLabel");
+            Files = this.FindByName<global::Xamarin.Forms.ListView>("Files");
+            AssignmentLabel = this.FindByName<global::Xamarin.Forms.Label>("AssignmentLabel");
+            Assignments = this.FindByName<global::Xamarin.Forms.ListView>("Assignments");
+            VideosLabel = this.FindByName<global::Xamarin.Forms.Label>("VideosLabel");
+            Videos = this.FindByName<global::Xamarin.Forms.ListView>("Videos");
         }
     }
 }

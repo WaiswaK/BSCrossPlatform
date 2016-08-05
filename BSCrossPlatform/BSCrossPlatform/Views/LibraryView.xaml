@@ -10,7 +10,7 @@
         <RowDefinition Height="*"/>
       </Grid.RowDefinitions>
       <StackLayout Orientation="Horizontal" Grid.Row="0">
-        <Image Source="library.png" />
+        <!--<Image Source="library.png" />-->
         <Label Text= "Library" HorizontalTextAlignment="Start" FontSize="20" 
                VerticalTextAlignment="Center" TextColor="Green"/>
       </StackLayout>

@@ -75,7 +75,6 @@
     <Compile Include="Models\VideoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\AssignmentViewModel.cs" />
-    <Compile Include="ViewModels\CategoryViewModel.cs" />
     <Compile Include="ViewModels\LibraryCategoryBooksViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\PDFReaderViewModel.cs" />
@@ -85,20 +84,14 @@
     <Compile Include="ViewModels\SubjectViewModel.cs" />
     <Compile Include="ViewModels\TopicViewModel.cs" />
     <Compile Include="ViewModels\TopicsViewModel.cs" />
-    <Compile Include="Views\AssignmentsView.xaml.cs">
-      <DependentUpon>AssignmentsView.xaml</DependentUpon>
+    <Compile Include="Views\AssignmentAttachView.xaml.cs">
+      <DependentUpon>AssignmentAttachView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\AssignmentView.xaml.cs">
       <DependentUpon>AssignmentView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\BrowserView.xaml.cs">
       <DependentUpon>BrowserView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\DocumentsView.xaml.cs">
-      <DependentUpon>DocumentsView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\FoldersView.xaml.cs">
-      <DependentUpon>FoldersView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LibraryCategoryBooksView.xaml.cs">
       <DependentUpon>LibraryCategoryBooksView.xaml</DependentUpon>
@@ -108,9 +101,6 @@
     </Compile>
     <Compile Include="Views\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\NotesView.xaml.cs">
-      <DependentUpon>NotesView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\PDFReader.xaml.cs">
       <DependentUpon>PDFReader.xaml</DependentUpon>
@@ -135,9 +125,6 @@
     </Compile>
     <Compile Include="Views\TopicView.xaml.cs">
       <DependentUpon>TopicView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\VideosView.xaml.cs">
-      <DependentUpon>VideosView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -182,14 +169,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\AssignmentsView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\DocumentsView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\LibraryCategoryBooksView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -199,10 +178,6 @@
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\NotesView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -234,10 +209,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\VideosView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\BrowserView.xaml">
@@ -246,13 +217,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\FoldersView.xaml">
+    <EmbeddedResource Include="Views\TopicAttachmentView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\TopicAttachmentView.xaml">
+    <EmbeddedResource Include="Views\AssignmentAttachView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

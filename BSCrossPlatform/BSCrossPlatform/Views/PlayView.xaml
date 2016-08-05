@@ -17,7 +17,9 @@
                LineBreakMode="WordWrap"/>
       </StackLayout>
       <StackLayout Grid.Row="1">
-        <WebView x:Name ="webView"/>
+        <WebView x:Name ="webView" 
+                 HeightRequest="1000"
+                 WidthRequest="1000"/>
       </StackLayout>
     </Grid>
   </ContentPage.Content>

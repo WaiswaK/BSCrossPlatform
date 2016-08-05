@@ -10,7 +10,9 @@
       </Grid.RowDefinitions>
       <StackLayout Orientation="Horizontal" Grid.Row="0" Padding="15,20,15,0">
         <Image Source="logo.png" />
-        <Label Text= "BrainShare" HorizontalTextAlignment="Start" FontSize="50" VerticalTextAlignment="Center" TextColor="White"/>
+        <Label Text= "BrainShare" HorizontalTextAlignment="Start" FontSize="50" 
+               VerticalTextAlignment="Center" TextColor="White"
+               LineBreakMode="WordWrap"/>
       </StackLayout>
       <StackLayout VerticalOptions="Center" Grid.Row="1" Padding="15,20,15,0">
         <Label Text="Login" FontSize="30"/>

@@ -14,28 +14,10 @@
                VerticalTextAlignment="Center" TextColor="Green" LineBreakMode="WordWrap"/>
       </StackLayout>
       <StackLayout Grid.Row="1">
-        <!--<DataTemplate>-->
-          <ListView RowHeight ="80"
-                ItemsSource ="{Binding AssignmentFiles}"
-                ItemTapped ="Handle_ItemTapped"
-                ItemSelected ="Handle_ItemSelected"
-      >
-            <ListView.ItemTemplate>
-              <DataTemplate>
-                <ImageCell ImageSource="pdf.gif" Text="{ Binding FileName }" TextColor="Black"/>
-              </DataTemplate>
-            </ListView.ItemTemplate>
-          </ListView>
-        <!--</DataTemplate>-->
-      </StackLayout>
-      <StackLayout Grid.Row="2">
-        <!--<DataTemplate>-->
-          <!-- <WebView Width ="*" Height="*" Name ="WebView2" Loaded="WebView2_Loaded"/>   -->
-          <WebView x:Name="webView" 
-                   Source="{Binding NotesHtmlWebViewSource}"
-                   HeightRequest="1000"
-                   WidthRequest="1000"/>
-        <!--</DataTemplate>-->
+        <WebView x:Name="webView"
+                        Source="{Binding NotesHtmlWebViewSource}"
+                        HeightRequest="1000"
+                        WidthRequest="1000"/>
       </StackLayout>
     </Grid>
   </ContentPage.Content>

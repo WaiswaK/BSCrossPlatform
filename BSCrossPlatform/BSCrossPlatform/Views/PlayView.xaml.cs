@@ -23,6 +23,10 @@ namespace BSCrossPlatform.Views
                 //webView.Height = 640;
                 //webView.Width = 640;
                 //webView.NavigateToString(Content);
+                Xamarin.Forms.HtmlWebViewSource temp = new Xamarin.Forms.HtmlWebViewSource();
+                temp.Html = Content;
+                webView.Source = temp;
+
             }
             else
             {

@@ -1,7 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
-    <ReferenceAssembly PathName="d:\onedrive\projects\bscrossplatform\bscrossplatform\bscrossplatform\bin\release\bscrossplatform.dll" HashGuid="6a1ec695-d5e8-6486-c727-16ac75eb2b14" />
+    <ReferenceAssembly PathName="d:\onedrive\projects\bscrossplatform\bscrossplatform\bscrossplatform\bin\release\bscrossplatform.dll" HashGuid="f49f6868-7e11-8a8c-8c0d-9f443d6f292d" />
     <ReferenceAssembly PathName="d:\onedrive\projects\bscrossplatform\packages\sqlite.net.core-pcl.3.1.1\lib\portable-win8+net45+wp8+wpa81+monoandroid1+monotouch1\sqlite.net.dll" HashGuid="2223cbf7-68d4-e5e4-e5e4-a19696ad83b6" />
     <ReferenceAssembly PathName="d:\onedrive\projects\bscrossplatform\packages\sqlite.net-pcl.3.1.1\lib\portable-win81+wpa81\sqlite.net.platform.winrt.dll" HashGuid="1bc7eaa0-e36a-f105-20d8-c57b14216cea" />
     <ReferenceAssembly PathName="d:\onedrive\projects\bscrossplatform\packages\xamarin.forms.2.0.0.6482\lib\wpa81\xamarin.forms.core.dll" HashGuid="c8a30eb8-5ae8-352d-b94f-7c913a7557ba" />

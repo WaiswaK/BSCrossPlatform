@@ -11,14 +11,14 @@
         <RowDefinition Height="*"/>
       </Grid.RowDefinitions>
       <StackLayout Orientation="Horizontal" Grid.Row="0">
-        <Image Source="topicnotes.png" />
+        <!--<Image Source="topicnotes.png" />-->
         <Label Text= "{ Binding TopicName }" HorizontalTextAlignment="Start"
                FontSize="20" VerticalTextAlignment="Center" TextColor="Green"
                LineBreakMode="WordWrap"/>
       </StackLayout>
       <StackLayout Grid.Row="1" >
         
-        <Button Text="View Notes" Clicked="OnViewClicked" TextColor="Black"/>
+        <Button Text="Click View Notes" Clicked="OnViewClicked" TextColor="Blue"/>
         
         <!--<ProgressBar x:Name="downloadProgress" IsVisible="False" Progress="0.0" />-->
                   

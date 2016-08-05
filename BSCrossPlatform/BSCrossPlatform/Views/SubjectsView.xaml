@@ -11,9 +11,10 @@
         <RowDefinition Height="*"/>
       </Grid.RowDefinitions>
       <StackLayout Orientation="Horizontal" Grid.Row="0">
-        <Image Source="units.png" />
+        <!--<Image Source="units.png" />-->
         <Label Text= "Subjects / Units" HorizontalTextAlignment="Start"
-               FontSize="20" VerticalTextAlignment="Center" TextColor="Green"/>
+               FontSize="20" VerticalTextAlignment="Center" TextColor="Green"
+               LineBreakMode="WordWrap"/>
       </StackLayout>
       <StackLayout Grid.Row="1">
         <ListView RowHeight ="80"
