@@ -8,6 +8,7 @@ namespace BSCrossPlatform
         public App()
         {
             MainPage = new NavigationPage(new Views.LoginView());
+            //MainPage = new Views.LoginView();          
         }
 
         protected override void OnStart()

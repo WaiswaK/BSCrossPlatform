@@ -6,7 +6,7 @@ namespace BSCrossPlatform.Droid.Tasks
 {
     class DatabaseTask : Interfaces.IDatabase
     {
-        private static string StorageFolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal); // Documents folder
+        private static string StorageFolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal); 
         private string dbPath = System.IO.Path.Combine(StorageFolder, Core.Constant.dbName);
 
         public DatabaseTask()

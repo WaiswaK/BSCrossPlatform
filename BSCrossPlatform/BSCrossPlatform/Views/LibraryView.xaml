@@ -10,7 +10,6 @@
         <RowDefinition Height="*"/>
       </Grid.RowDefinitions>
       <StackLayout Orientation="Horizontal" Grid.Row="0">
-        <!--<Image Source="library.png" />-->
         <Label Text= "Library" HorizontalTextAlignment="Start" FontSize="20" 
                VerticalTextAlignment="Center" TextColor="Green"/>
       </StackLayout>
@@ -22,7 +21,7 @@
       >
           <ListView.ItemTemplate>
             <DataTemplate>
-              <ImageCell ImageSource="ebooks.png" Text="{ Binding category_name }" TextColor="Black"/>
+              <ImageCell ImageSource="{ Binding category_image }" Text="{ Binding category_name }" TextColor="Black"/>
             </DataTemplate>
           </ListView.ItemTemplate>
         </ListView>

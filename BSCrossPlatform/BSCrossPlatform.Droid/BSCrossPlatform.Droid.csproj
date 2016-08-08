@@ -9,8 +9,8 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BSCrossPlatform.Droid</RootNamespace>
-    <AssemblyName>BSCrossPlatform.Droid</AssemblyName>
+    <RootNamespace>BrainShare.Droid</RootNamespace>
+    <AssemblyName>BrainShare.Droid</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
@@ -430,8 +430,8 @@
     <EmbeddedResource Include="Assets\pdfjs\web\images\toolbarButton-zoomOut%402x.png" />
     <EmbeddedResource Include="Assets\pdfjs\web\images\toolbarButton-zoomOut.png" />
     <EmbeddedResource Include="Assets\pdfjs\web\l10n.js" />
-    <Content Include="Assets\pdfjs\web\viewer.css" />
-    <Content Include="Assets\pdfjs\web\viewer.html" />
+    <EmbeddedResource Include="Assets\pdfjs\web\viewer.css" />
+    <EmbeddedResource Include="Assets\pdfjs\web\viewer.html" />
     <EmbeddedResource Include="Assets\pdfjs\web\viewer.js" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

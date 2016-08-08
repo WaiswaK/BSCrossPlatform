@@ -25,15 +25,12 @@ namespace BSCrossPlatform.ViewModels
             List<LibCategoryModel> categories = new List<LibCategoryModel>();
             try
             {
-                //List<LibCategoryModel> categories = new List<LibCategoryModel>();
                 List<BookModel> books = new List<BookModel>();
                 foreach (var category in initial_categories)
                 {
                     category.category_image = category.category_books.First().thumb_url;
                     categories.Add(category);
                 }
-
-                //return categories;
             }
             catch 
             {
@@ -44,7 +41,7 @@ namespace BSCrossPlatform.ViewModels
         public ModulesViewModel(ModulesModel models)
         {
             CourseList = models.Subjects;
-            CategoryList = LibraryCategories(models.LibraryCategories);//models.LibraryCategories;
+            CategoryList = LibraryCategories(models.LibraryCategories);
         }
     }
 }

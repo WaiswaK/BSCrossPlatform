@@ -17,7 +17,6 @@
       <StackLayout VerticalOptions="Center" Grid.Row="1" Padding="15,20,15,0">
         <Label Text="Login" FontSize="30"/>
         <Entry x:Name="email_tb" Placeholder="Email" />
-        <!--<Label Text="Password" FontSize="20"/>-->
         <Entry x:Name="password_tb" IsPassword="true" Placeholder="Password"/>
         <Button x:Name ="login_btn" Text="Sign In" Clicked="OnLoginButtonClicked"/>
         <Label Text="OR" HorizontalTextAlignment="Center" FontSize="20" />

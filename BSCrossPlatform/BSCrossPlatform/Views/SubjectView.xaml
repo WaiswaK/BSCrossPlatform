@@ -9,13 +9,12 @@
         <RowDefinition Height="*"/>
       </Grid.RowDefinitions> 
       <StackLayout Orientation="Horizontal" Grid.Row="0">
-        <!--<Image Source="course.png" />-->
         <Label Text= "{ Binding SubjectName }" HorizontalTextAlignment="Start" FontSize="20"
                VerticalTextAlignment="Center" TextColor="Green" 
                LineBreakMode="WordWrap"/>
       </StackLayout>
       <ScrollView Grid.Row="1">
-        <StackLayout >
+        <StackLayout>
           <!--Topics-->
           <Label x:Name ="TopicsLabel" Text="Featured Topics" TextColor="Green" FontSize="15"/>
           <ListView RowHeight ="80"

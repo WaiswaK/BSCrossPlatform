@@ -31,7 +31,6 @@ namespace BSCrossPlatform.Core
             }
             catch
             {
-
             }
             //Trigger upload of the errors
             //Delete errors after send
@@ -45,7 +44,6 @@ namespace BSCrossPlatform.Core
             }
             catch
             {
-
             }
         }
     }
