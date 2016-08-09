@@ -15,6 +15,7 @@ namespace BSCrossPlatform.iOS.Tasks
         #region Implementations
         public async Task ForceImageDownloader(string filepath, string fileName, string extension)
         {
+            filepath = Core.CommonTask.httplink(filepath);
             var webClient = new WebClient();
             webClient.DownloadDataCompleted += (s, e) => {
                 var bytes = e.Result; // get the downloaded data
@@ -26,6 +27,7 @@ namespace BSCrossPlatform.iOS.Tasks
         }
         public async Task ImageDownloader(string filepath, string fileName)
         {
+            filepath = Core.CommonTask.httplink(filepath);
             var webClient = new WebClient();
             webClient.DownloadDataCompleted += (s, e) => {
                 var bytes = e.Result; // get the downloaded data
@@ -58,9 +60,15 @@ namespace BSCrossPlatform.iOS.Tasks
         }
         public async Task DownloadFile(string filepath, string fileName)
         {
+            filepath = Core.CommonTask.httplink(filepath);
             //throw new NotImplementedException();
             var destination = Path.Combine(documentsPath, fileName + Core.Constant.PDF_extension);
             await new WebClient().DownloadFileTaskAsync(new Uri(filepath), destination);
+        }
+
+        public string pdfPath(string pdfName)
+        {
+            throw new NotImplementedException();
         }
         #endregion
     }

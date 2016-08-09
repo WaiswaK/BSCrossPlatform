@@ -54,14 +54,6 @@ namespace BSCrossPlatform.Views
                                 fullydownloaded = false;
                                 IsBusy = false;
                             }
-                            //int bytesDownloaded = await downloadTask;
-                            //double value = x / 100;
-                            //value = Math.Round(value,1);//Math.Round((x / 100));
-
-                            //downloadProgress.Progress = value;
-                            //downloadProgress.
-                            //if (x == 100)
-                            //{
 
                             if (fullydownloaded == true)
                             {
@@ -69,7 +61,7 @@ namespace BSCrossPlatform.Views
                                 using (var db = DependencyService.Get<Interfaces.IDatabase>().GetConnection())
                                 {
                                     var query = (db.Table<Attachment>().Where(c => c.AttachmentID == attachment.AttachmentID)).Single();
-                                    string newPath = query.FileName + Constant.PDF_extension;
+                                    string newPath = DependencyService.Get<Interfaces.ITask>().pdfPath(query.FileName + Constant.PDF_extension);
                                     Attachment fileDownloaded = new Attachment(query.AttachmentID, query.TopicID, query.FileName, newPath, query.SubjectId, query.AssignmentID);
                                     db.Update(fileDownloaded);
                                     attachment.FilePath = newPath;
@@ -80,7 +72,6 @@ namespace BSCrossPlatform.Views
                             {
                                 await DisplayAlert(Message.Download_Header, Message.Download_Error, Message.Ok);
                             }
-                            //}
                         }
                         else
                         {

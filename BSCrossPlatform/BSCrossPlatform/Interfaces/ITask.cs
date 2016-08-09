@@ -13,5 +13,6 @@ namespace BSCrossPlatform.Interfaces
         bool IsInternetConnectionAvailable();
         Task<bool> FileExists(string path);
         Task DownloadFile(string filepath, string fileName);
+        string pdfPath(string pdfName);
     }
 }

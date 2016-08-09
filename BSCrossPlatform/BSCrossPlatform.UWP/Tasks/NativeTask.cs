@@ -144,7 +144,7 @@ namespace BSCrossPlatform.UWP.Tasks
         public async Task DownloadFile(string filepath, string fileName)
         {
             StorageFile storageFile = await appFolder.CreateFileAsync(fileName + Core.Constant.PDF_extension, CreationCollisionOption.ReplaceExisting);
-            string newpath = Core.Constant.BaseUri + filepath;
+            string newpath = Core.CommonTask.httplink(filepath);
             try
             {
                 var downloader = new Windows.Networking.BackgroundTransfer.BackgroundDownloader();
@@ -155,6 +155,11 @@ namespace BSCrossPlatform.UWP.Tasks
             catch
             {
             }
+        }
+        public string pdfPath(string pdfName)
+        {
+            string path = Path.Combine(appFolder.Path, pdfName);
+            return path;
         }
         #endregion
     }
