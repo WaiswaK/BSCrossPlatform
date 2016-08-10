@@ -11,13 +11,13 @@ namespace BSCrossPlatform.ViewModels
             set { _pdfpath = value; }
 
         }
-        PDFReaderViewModel(AttachmentModel attachement)
+        public PDFReaderViewModel(AttachmentModel attachement)
         {
-            PDFPath = attachement.FilePath;
+            PDFPath = Core.CommonTask.PDFFileFromPath(attachement.FilePath);
         }
-        PDFReaderViewModel(BookModel book)
+        public PDFReaderViewModel(BookModel book)
         {
-            PDFPath = book.file_url;
+            PDFPath = Core.CommonTask.PDFFileFromPath(book.file_url);
         }
     }
 }

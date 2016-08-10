@@ -160,7 +160,6 @@ namespace BSCrossPlatform.WinPhone.Tasks
             {
             }
         }
-
         public string pdfPath(string pdfName)
         {
             string path = Path.Combine(appFolder.Path, pdfName);

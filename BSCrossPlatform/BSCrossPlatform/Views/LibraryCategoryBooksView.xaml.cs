@@ -19,7 +19,7 @@ namespace BSCrossPlatform.Views
             var book = ((ListView)sender).SelectedItem as BookModel;
             if (book == null)
                 return;
-            else //await Navigation.PushAsync(new PDFReader(book));
+            else 
             {
                 if (await DependencyService.Get<Interfaces.ITask>().FileExists(book.file_url))
                     await Navigation.PushAsync(new PDFReader(book));

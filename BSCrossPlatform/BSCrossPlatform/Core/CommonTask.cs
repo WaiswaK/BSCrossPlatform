@@ -18,9 +18,8 @@ namespace BSCrossPlatform.Core
         //Method to format the youtube Link
         public static string newYouTubeLink(string link)
         {
-            char[] delimiter1 = { '=' };
-            char[] delimiter2 = { '/' };
-            string[] linksplit = link.Split(delimiter1);
+            char[] delimiter = { '=' };
+            string[] linksplit = link.Split(delimiter);
             List<string> linklist = linksplit.ToList();
             string linkfile = linklist.Last();
             string finallink = "https://www.youtube.com/embed/" + linkfile;
@@ -57,6 +56,14 @@ namespace BSCrossPlatform.Core
                 weblink = Constant.BaseUri + filepath;
             }
             return weblink;
+        }
+        //Method to Get PDF File name from path
+        public static string PDFFileFromPath(string link)
+        {
+            char[] delimiter = { '/' };
+            string[] linksplit = link.Split(delimiter);
+            List<string> linklist = linksplit.ToList();
+            return linksplit.Last();
         }
     }
 }

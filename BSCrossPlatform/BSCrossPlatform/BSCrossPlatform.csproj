@@ -93,6 +93,7 @@
     <Compile Include="Views\BrowserView.xaml.cs">
       <DependentUpon>BrowserView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\CustomWebView.cs" />
     <Compile Include="Views\LibraryCategoryBooksView.xaml.cs">
       <DependentUpon>LibraryCategoryBooksView.xaml</DependentUpon>
     </Compile>

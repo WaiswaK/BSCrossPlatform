@@ -9,10 +9,12 @@ namespace BSCrossPlatform.Views
         public PDFReader(AttachmentModel file)
         {
             InitializeComponent();
+            BindingContext = new ViewModels.PDFReaderViewModel(file);
         }
         public PDFReader(BookModel book)
         {
             InitializeComponent();
+            BindingContext = new ViewModels.PDFReaderViewModel(book);
         }
     }
 }
