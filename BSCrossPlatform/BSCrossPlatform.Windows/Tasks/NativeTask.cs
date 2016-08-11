@@ -143,7 +143,9 @@ namespace BSCrossPlatform.Windows.Tasks
         }
         public async Task DownloadFile(string filepath, string fileName)
         {
-            StorageFile storageFile = await appFolder.CreateFileAsync(fileName + Core.Constant.PDF_extension, CreationCollisionOption.ReplaceExisting);
+            fileName = fileName + Core.Constant.PDF_extension;
+            fileName = fileName.Replace(' ', '_');
+            StorageFile storageFile = await appFolder.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
             string newpath = Core.CommonTask.httplink(filepath);
             try
             {
@@ -156,7 +158,6 @@ namespace BSCrossPlatform.Windows.Tasks
             {
             }
         }
-
         public string pdfPath(string pdfName)
         {
             string path = System.IO.Path.Combine(appFolder.Path, pdfName);

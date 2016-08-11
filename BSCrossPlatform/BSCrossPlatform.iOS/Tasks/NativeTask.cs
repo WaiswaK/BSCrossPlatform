@@ -28,10 +28,11 @@ namespace BSCrossPlatform.iOS.Tasks
         public async Task ImageDownloader(string filepath, string fileName)
         {
             filepath = Core.CommonTask.httplink(filepath);
+            string imageformat = Core.ImageTask.imageFormat(filepath);
             var webClient = new WebClient();
             webClient.DownloadDataCompleted += (s, e) => {
                 var bytes = e.Result; // get the downloaded data
-                string localPath = Path.Combine(documentsPath, fileName);
+                string localPath = Path.Combine(documentsPath, fileName + imageformat);
                 File.WriteAllBytes(localPath, bytes); // writes to local storage
             };
             var url = new Uri(filepath);
@@ -39,7 +40,7 @@ namespace BSCrossPlatform.iOS.Tasks
         }
         public string imagePath(string imagename)
         {
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            string path = Path.Combine(documentsPath, imagename);
             return path;
         }
         public bool IsInternetConnectionAvailable()
@@ -61,14 +62,15 @@ namespace BSCrossPlatform.iOS.Tasks
         public async Task DownloadFile(string filepath, string fileName)
         {
             filepath = Core.CommonTask.httplink(filepath);
-            //throw new NotImplementedException();
-            var destination = Path.Combine(documentsPath, fileName + Core.Constant.PDF_extension);
+            fileName = fileName + Core.Constant.PDF_extension;
+            fileName = fileName.Replace(' ', '_');
+            var destination = Path.Combine(documentsPath, fileName);
             await new WebClient().DownloadFileTaskAsync(new Uri(filepath), destination);
         }
-
         public string pdfPath(string pdfName)
         {
-            throw new NotImplementedException();
+            string path = Path.Combine(documentsPath, pdfName);
+            return path;
         }
         #endregion
     }

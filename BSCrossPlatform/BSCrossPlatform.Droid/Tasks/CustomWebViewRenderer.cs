@@ -1,6 +1,6 @@
 //using Android.OS;
-using BSCrossPlatform.Core;
 using BSCrossPlatform.Droid.Tasks;
+using BSCrossPlatform.Views;
 using System.Net;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
@@ -20,8 +20,7 @@ namespace BSCrossPlatform.Droid.Tasks
             {
                 var customWebView = Element as CustomWebView;
                 Control.Settings.AllowUniversalAccessFromFileURLs = true;
-                //Control.LoadUrl(string.Format("file:///android_asset/pdfjs/web/viewer.html?file={0}", string.Format(documentsPath + "/{0}", WebUtility.UrlEncode(customWebView.Uri))));
-                Control.LoadUrl(string.Format("file:///android_asset/pdfjs/web/viewer.html?file={0}", string.Format(NativeTask.AppFolderPath() + "/{0}", WebUtility.UrlEncode(customWebView.Uri))));
+                Control.LoadUrl(string.Format("file:///android_asset/pdfjs/web/viewer.html?file={0}", string.Format("file://" + NativeTask.AppFolderPath() + "/{0}", WebUtility.UrlEncode(customWebView.Uri))));                
             }
         }
     }

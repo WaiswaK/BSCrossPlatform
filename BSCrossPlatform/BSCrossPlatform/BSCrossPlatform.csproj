@@ -38,7 +38,6 @@
     <Compile Include="App.cs" />
     <Compile Include="Core\CommonTask.cs" />
     <Compile Include="Core\Constant.cs" />
-    <Compile Include="Core\CustomWebView.cs" />
     <Compile Include="Core\DBInsertionTask.cs" />
     <Compile Include="Core\DBRetrievalTask.cs" />
     <Compile Include="Core\ErrorLogTask.cs" />

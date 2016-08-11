@@ -51,6 +51,7 @@ namespace BSCrossPlatform.Views
                                 {
                                     var query = (db.Table<Database.Book>().Where(c => c.Book_id == book.book_id)).Single();
                                     string newPath = DependencyService.Get<Interfaces.ITask>().pdfPath(query.Book_title + Core.Constant.PDF_extension);
+                                    newPath = newPath.Replace(' ', '_');
                                     Database.Book fileDownloaded = new Database.Book(query.Book_id, query.Book_title, query.Book_author, query.Book_description,
                                         query.updated_at, query.thumb_url, query.file_size, query.Library_id, query.Category_id, query.Category_name, newPath);
                                     db.Update(fileDownloaded);

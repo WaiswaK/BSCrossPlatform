@@ -87,8 +87,10 @@ namespace BSCrossPlatform.Droid.Tasks
         public async Task DownloadFile(string filepath, string fileName)
         {
             filepath = Core.CommonTask.httplink(filepath);
-            var destination = Path.Combine(AppFolderPath(), fileName + Core.Constant.PDF_extension);
-             await new WebClient().DownloadFileTaskAsync(new System.Uri(filepath), destination);
+            fileName = fileName + Core.Constant.PDF_extension;
+            fileName = fileName.Replace(' ', '_');
+            var destination = Path.Combine(AppFolderPath(), fileName);
+            await new WebClient().DownloadFileTaskAsync(new System.Uri(filepath), destination);
         }
         public string pdfPath(string pdfName)
         {

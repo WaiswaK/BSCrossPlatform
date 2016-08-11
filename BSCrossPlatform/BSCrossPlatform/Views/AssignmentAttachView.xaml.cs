@@ -63,6 +63,7 @@ namespace BSCrossPlatform.Views
                                 {
                                     var query = (db.Table<Attachment>().Where(c => c.AttachmentID == attachment.AttachmentID)).Single();
                                     string newPath = DependencyService.Get<Interfaces.ITask>().pdfPath(query.FileName + Constant.PDF_extension);
+                                    newPath = newPath.Replace(' ', '_');
                                     Attachment fileDownloaded = new Attachment(query.AttachmentID, query.TopicID, query.FileName, newPath, query.SubjectId, query.AssignmentID);
                                     db.Update(fileDownloaded);
                                     attachment.FilePath = newPath;
