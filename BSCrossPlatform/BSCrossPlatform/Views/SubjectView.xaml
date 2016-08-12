@@ -1,79 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BSCrossPlatform.Views.SubjectView"
-             BackgroundImage ="background.jpg">
-  <ContentPage.Content>
-    <Grid>
-      <Grid.RowDefinitions>
-        <RowDefinition Height="100"/>
-        <RowDefinition Height="*"/>
-      </Grid.RowDefinitions> 
-      <StackLayout Orientation="Horizontal" Grid.Row="0">
-        <Label Text= "{ Binding SubjectName }" HorizontalTextAlignment="Start" FontSize="20"
-               VerticalTextAlignment="Center" TextColor="Green" 
-               LineBreakMode="WordWrap"/>
-      </StackLayout>
-      <ScrollView Grid.Row="1">
-        <StackLayout>
-          <!--Topics-->
-          <Label x:Name ="TopicsLabel" Text="Featured Topics" TextColor="Green" FontSize="15"/>
-          <ListView RowHeight ="80"
-                  ItemsSource ="{Binding TopicList}"
-                  ItemTapped ="Handle_ItemTapped"
-                  ItemSelected ="Handle_TopicSelected"
-                  x:Name ="Topics"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="BSCrossPlatform.Views.SubjectView"            
+            Title="{ Binding SubjectName }">
+
+  <TabbedPage.Children>
+    
+  <ContentPage Title="Featured Topics" x:Name="Topics" BackgroundImage ="background.jpg">
+        <ListView RowHeight ="80"
+                    ItemsSource ="{Binding TopicList}"
+                    ItemTapped ="Handle_ItemTapped"
+                    ItemSelected ="Handle_TopicSelected"
       >
-            <ListView.ItemTemplate>
-              <DataTemplate>
-                <ImageCell ImageSource="course.png" Text="{ Binding folder_name }" TextColor="Black"/>
-              </DataTemplate>
-            </ListView.ItemTemplate>
-          </ListView>            
-          <!-- Files-->
-          <Label x:Name ="FilesLabel" Text="Featured Files" TextColor="Green" FontSize="15"/>
-          <ListView RowHeight ="80"
-                  ItemsSource ="{Binding FileList}"
-                  ItemTapped ="Handle_ItemTapped"
-                  ItemSelected ="Handle_FileSelected"
-                  x:Name ="Files"
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ImageCell ImageSource="course.png" Text="{ Binding folder_name }" TextColor="Black"/>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </ContentPage>
+    
+  <ContentPage Title="Featured Files" x:Name ="Files" BackgroundImage ="background.jpg">
+        <ListView RowHeight ="80"
+                      ItemsSource ="{Binding FileList}"
+                      ItemTapped ="Handle_ItemTapped"
+                      ItemSelected ="Handle_FileSelected"
       >
-            <ListView.ItemTemplate>
-              <DataTemplate>
-                <ImageCell ImageSource="pdf.gif" Text="{ Binding FileName }" TextColor="Black"/>
-              </DataTemplate>
-            </ListView.ItemTemplate>
-          </ListView>
-          <!--Assignments-->
-          <Label x:Name ="AssignmentLabel" Text ="Featured Assignments" TextColor="Green" FontSize="15"/>
-          <ListView RowHeight ="80"
-                  ItemsSource ="{Binding AssignmentList}"
-                  ItemTapped ="Handle_ItemTapped"
-                  ItemSelected ="Handle_AssignmentSelected"
-                  x:Name ="Assignments"
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ImageCell ImageSource="pdf.gif" Text="{ Binding FileName }" TextColor="Black"/>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </ContentPage>
+    
+  <ContentPage Title="Featured Assignments" x:Name ="Assignments" BackgroundImage ="background.jpg">
+        <ListView RowHeight ="80"
+                      ItemsSource ="{Binding AssignmentList}"
+                      ItemTapped ="Handle_ItemTapped"
+                      ItemSelected ="Handle_AssignmentSelected"
       >
-            <ListView.ItemTemplate>
-              <DataTemplate>
-                <ImageCell ImageSource="classnotes.png" Text="{ Binding title }"
-                           Detail="{Binding teacher}" TextColor="Black"/>
-              </DataTemplate>
-            </ListView.ItemTemplate>
-          </ListView>
-          <!--Videos-->
-          <Label x:Name ="VideosLabel" Text="Featured Videos" TextColor="Green" FontSize="15"/>
-          <ListView RowHeight ="80"
-                  ItemsSource ="{Binding VideosList}"
-                  ItemTapped ="Handle_ItemTapped"
-                  ItemSelected ="Handle_VideoSelected"
-                  x:Name ="Videos"
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ImageCell ImageSource="classnotes.png" Text="{ Binding title }"
+                         Detail="{Binding teacher}" TextColor="Black"/>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </ContentPage>
+  
+  <ContentPage Title="Featured Videos" x:Name ="Videos" BackgroundImage ="background.jpg">
+        <ListView RowHeight ="80"
+                      ItemsSource ="{Binding VideosList}"
+                      ItemTapped ="Handle_ItemTapped"
+                      ItemSelected ="Handle_VideoSelected"
       >
-            <ListView.ItemTemplate>
-              <DataTemplate>
-                <ImageCell ImageSource="Video.png" Text="{ Binding FileName }" TextColor="Black"/>
-              </DataTemplate>
-            </ListView.ItemTemplate>
-          </ListView>
-        </StackLayout>
-      </ScrollView>
-    </Grid>
-  </ContentPage.Content>
-</ContentPage>
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ImageCell ImageSource="Video.png" Text="{ Binding FileName }" TextColor="Black"/>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </ContentPage>
+  
+  </TabbedPage.Children>
+ 
+</TabbedPage>

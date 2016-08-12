@@ -81,9 +81,6 @@
     <Compile Include="ViewModels\SubjectViewModel.cs" />
     <Compile Include="ViewModels\TopicViewModel.cs" />
     <Compile Include="ViewModels\TopicsViewModel.cs" />
-    <Compile Include="Views\AssignmentAttachView.xaml.cs">
-      <DependentUpon>AssignmentAttachView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\AssignmentView.xaml.cs">
       <DependentUpon>AssignmentView.xaml</DependentUpon>
     </Compile>
@@ -114,9 +111,6 @@
     </Compile>
     <Compile Include="Views\SubjectView.xaml.cs">
       <DependentUpon>SubjectView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\TopicAttachmentView.xaml.cs">
-      <DependentUpon>TopicAttachmentView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TopicsView.xaml.cs">
       <DependentUpon>TopicsView.xaml</DependentUpon>
@@ -210,18 +204,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\BrowserView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\TopicAttachmentView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\AssignmentAttachView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

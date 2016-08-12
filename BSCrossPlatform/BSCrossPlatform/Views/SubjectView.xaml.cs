@@ -5,31 +5,19 @@ using Xamarin.Forms;
 
 namespace BSCrossPlatform.Views
 {
-    public partial class SubjectView : ContentPage
+    public partial class SubjectView : TabbedPage
     {
         public SubjectView(SubjectModel subject)
         {
             InitializeComponent();
             if (subject.topics.Count == 0)
-            {
-                TopicsLabel.IsVisible = false;
-                Topics.IsVisible = false;
-            }
-            if(subject.files.Count == 0)
-            {
-                FilesLabel.IsVisible = false;
-                Files.IsVisible = false;
-            }
-            if(subject.videos.Count == 0 )
-            {
-                VideosLabel.IsVisible = false;
-                Videos.IsVisible = false;
-            }
+                Children.Remove(Topics);
+            if (subject.files.Count == 0)
+                Children.Remove(Files);
+            if (subject.videos.Count == 0)
+                Children.Remove(Videos);
             if (subject.assignments.Count == 0)
-            {
-                Assignments.IsVisible = false;
-                AssignmentLabel.IsVisible = false;
-            }
+                Children.Remove(Assignments);
             BindingContext = new SubjectViewModel(subject);
         }
         void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -115,14 +103,7 @@ namespace BSCrossPlatform.Views
             else
             {
                 string content = Core.WebViewContentHelper.WrapHtml(assignment.description, 100, 100);
-                if (assignment.Files.Count == 0)
-                {
-                    await Navigation.PushAsync(new AssignmentView(assignment, content));
-                }
-                else
-                {
-                    await Navigation.PushAsync(new AssignmentAttachView(assignment, content));
-                }
+                await Navigation.PushAsync(new AssignmentView(assignment, content));
             }
         }
     }

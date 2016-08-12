@@ -22,9 +22,9 @@ D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Droid\obj\D
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Droid\obj\Debug\android\assets\System.Runtime.dll
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Droid\obj\Debug\android\assets\System.Resources.ResourceManager.dll
+D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Droid\obj\Debug\android\assets\System.Diagnostics.Tools.dll
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Droid\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Droid\obj\Debug\android\assets\System.Threading.Tasks.dll
-D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Droid\obj\Debug\android\assets\System.Diagnostics.Tools.dll
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Droid\obj\Debug\android\assets\System.Linq.Expressions.dll
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Droid\obj\Debug\android\assets\Newtonsoft.Json.dll
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll
