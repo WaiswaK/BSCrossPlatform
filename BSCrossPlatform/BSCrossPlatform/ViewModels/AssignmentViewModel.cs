@@ -18,12 +18,6 @@ namespace BSCrossPlatform.ViewModels
             get { return _attachments; }
             set { _attachments = value; }
         }
-        /*private string _notes;
-        public string AssignmentNotes
-        {
-            get { return _notes; }
-            set { _notes = value; }
-        }*/
         private Xamarin.Forms.HtmlWebViewSource _htmlWebViewSource;
         public Xamarin.Forms.HtmlWebViewSource NotesHtmlWebViewSource
         {

@@ -16,7 +16,6 @@ namespace BSCrossPlatform.Database
         public int Library_id { get; set; }
         public int Category_id { get; set; }
         public string Category_name { get; set; }
-
         public Book(int _book_id, string _book_title, string _book_author, string _book_description, string _updated_at, 
             string _thumb_url, int _file_size, int _library_id, int _category_id, string _category_name, string _file_url)
         {
@@ -32,14 +31,8 @@ namespace BSCrossPlatform.Database
             Category_name = _category_name;
             file_size = _file_size;
         }
-
         public Book()
         {
-
         }
-
-
-
-
     }
 }

@@ -54,7 +54,7 @@ namespace BSCrossPlatform.Core
         }
         #endregion
         #region Subjects JSON Methods
-        public static SubjectModel GetSubject(Newtonsoft.Json.Linq.JArray SubjectsArray, int Sub_id, Newtonsoft.Json.Linq.JArray NotesArray, Newtonsoft.Json.Linq.JArray VideosArray, Newtonsoft.Json.Linq.JArray AssignmentArray, Newtonsoft.Json.Linq.JArray FilesArray)
+        private static SubjectModel GetSubject(Newtonsoft.Json.Linq.JArray SubjectsArray, int Sub_id, Newtonsoft.Json.Linq.JArray NotesArray, Newtonsoft.Json.Linq.JArray VideosArray, Newtonsoft.Json.Linq.JArray AssignmentArray, Newtonsoft.Json.Linq.JArray FilesArray)
         {
             SubjectModel subject = new SubjectModel();
             int temp = 0;

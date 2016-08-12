@@ -11,7 +11,6 @@ namespace BSCrossPlatform.Database
         public string profileName { get; set; }
         public string subjects { get; set; }
         public int School_id { get; set; }
-        //public DateTime {get;set;}
         public User(string mail, string pass, string profile, string subs, int school) 
         {
             e_mail = mail;

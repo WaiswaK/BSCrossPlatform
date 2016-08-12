@@ -98,7 +98,7 @@ namespace BSCrossPlatform.Core
             }
             return topics;
         }
-        public static List<AttachmentModel> GetFiles(int id1, int id2, int id3)
+        private static List<AttachmentModel> GetFiles(int id1, int id2, int id3)
         {
             List<AttachmentModel> attachments = new List<AttachmentModel>();
             AttachmentModel attachment = null;

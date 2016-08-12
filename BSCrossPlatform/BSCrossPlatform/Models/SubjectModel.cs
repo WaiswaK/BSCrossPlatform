@@ -21,10 +21,8 @@ namespace BSCrossPlatform.Models
             assignments = _assignments;
             videos = _videos;
         }
-
         public SubjectModel() 
         { 
-
         }
     }
 }

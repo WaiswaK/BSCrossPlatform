@@ -2,7 +2,7 @@
 {
     public class Constant
     {
-        public static string dbName = "BrainShareDB.sqlite";
+        public static string dbName = "DB.sqlite";
         private static string http = "http://";
         private static string www = "www.";
         private static string Base = "brainshare.ug";

@@ -12,7 +12,7 @@ namespace BSCrossPlatform.Core
     class NotesTask
     {
         //Offline notes
-        public static async Task<string> Offline_Notes(string notes, string subject, string topic)
+        private static async Task<string> Offline_Notes(string notes, string subject, string topic)
         {
             int notes_image = 0;
             string start_string_two = "http://";
@@ -159,7 +159,7 @@ namespace BSCrossPlatform.Core
             return new_notes;
         }
         //Notes image download methods
-        public static async void NotesImageDownloader(string notes, string subject, string topic)
+        private static async void NotesImageDownloader(string notes, string subject, string topic)
         {
             int notes_image = 0;
             string start_string = "http://";

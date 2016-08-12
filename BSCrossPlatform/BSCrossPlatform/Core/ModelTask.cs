@@ -569,7 +569,7 @@ namespace BSCrossPlatform.Core
         }
         #endregion        
         #region Library Methods
-        public static LibCategoryModel Category_Update(List<BookModel> oldbooks, List<BookModel> newbooks)
+        private static LibCategoryModel Category_Update(List<BookModel> oldbooks, List<BookModel> newbooks)
         {
             LibCategoryModel category = new LibCategoryModel();
             List<BookModel> books = new List<BookModel>();
@@ -673,7 +673,7 @@ namespace BSCrossPlatform.Core
             }
             return lib;
         }
-        public static LibCategoryModel Category_Update_Removal(List<BookModel> oldbooks, List<BookModel> newbooks)
+        private static LibCategoryModel Category_Update_Removal(List<BookModel> oldbooks, List<BookModel> newbooks)
         {
             LibCategoryModel category = new LibCategoryModel();
             List<BookModel> books = new List<BookModel>();

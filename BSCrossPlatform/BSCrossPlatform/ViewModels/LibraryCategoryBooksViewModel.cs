@@ -11,7 +11,6 @@ namespace BSCrossPlatform.ViewModels
             get { return _books; }           
             set { _books = value; }
         }
-
         private string _categoryname;
         public string CategoryName
         {
@@ -24,7 +23,6 @@ namespace BSCrossPlatform.ViewModels
                 _categoryname = value;
             }
         }
-
         public LibraryCategoryBooksViewModel(LibCategoryModel category)
         {
             BookList = category.category_books;

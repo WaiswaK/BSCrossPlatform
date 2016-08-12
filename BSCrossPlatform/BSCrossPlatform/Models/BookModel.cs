@@ -13,7 +13,6 @@
         public int Library_id { get; set; }
         public int Category_id { get; set; }
         public string Category_name { get; set; }
-
         public BookModel(int id, string title, string author, string description, string update, string thumb, string filepath, int fileSize, int library_id,
                               int category_id, string category_name)
         {
@@ -31,7 +30,6 @@
         }
         public BookModel()
         {
-
         }
     }
 }

@@ -13,7 +13,6 @@ namespace BSCrossPlatform.Models
         public string Updated_at { get; set; }
         public string folder_name { get; set; }
         public int folder_id { get; set; }
-
         public TopicModel(int _topicId, string _notes, string _updatednotes, string _title, List<AttachmentModel> _files, string full_names, string _updated, int _folder_id, string _folder_name)
         {
             TopicTitle = _title;
@@ -26,7 +25,6 @@ namespace BSCrossPlatform.Models
             folder_id = _folder_id;
             folder_name = _folder_name;
         }
-
         public TopicModel() { }
     }
 }
