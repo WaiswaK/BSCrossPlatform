@@ -8,10 +8,6 @@
 
     <ContentPage Title="Content" BackgroundImage ="background.jpg">
       <Grid>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="100"/>
-          <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
         <StackLayout>
           <WebView x:Name="webView"
                    Source="{Binding NotesHtmlWebViewSource}"

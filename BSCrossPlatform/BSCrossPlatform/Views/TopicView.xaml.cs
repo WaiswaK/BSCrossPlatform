@@ -29,12 +29,11 @@ namespace BSCrossPlatform.Views
                     await Navigation.PushAsync(new PDFReader(attachment));
                 else
                 {
-                    var option = await DisplayAlert("Question?", "Would you like to download the file", "Download", "View");
                     if (DependencyService.Get<Interfaces.ITask>().IsInternetConnectionAvailable())
                     {
+                        var option = await DisplayAlert(Message.File_Access_Header, Message.File_Access_Message, Message.Yes, Message.No);
                         if (option)
                         {
-                            //downloadProgress.IsVisible = true;
                             bool fullydownloaded = false;
                             IsBusy = true;
                             try
@@ -69,12 +68,12 @@ namespace BSCrossPlatform.Views
                         }
                         else
                         {
-                            await Navigation.PushAsync(new BrowserView(Core.Constant.BaseUri + attachment.FilePath));
+                            await DisplayAlert(Message.File_Access_Header, Message.Offline_File_Unavailable, Message.Ok);
                         }
                     }
                     else
                     {
-                        await DisplayAlert(Message.Connection_Error_Header, Message.Connection_Error, Message.Ok);
+                        await DisplayAlert(Message.File_Access_Header, Message.Offline_File_Unavailable, Message.Ok);
                     }
                 }
             }

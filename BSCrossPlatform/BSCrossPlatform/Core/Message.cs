@@ -23,6 +23,7 @@
         public static string No_Subject = "Looks like you have not added any units/subjects to your account. Login via the BrainShare website and add them first before using the app. Thanks";
         public static string No_Subject_Header = "Missing Course Units / Subjects";
         public static string Offline_File_Unavailable = "This file is only available online, you need an internet Connection to view it";
+        public static string Offline_Video_Unavailable = "This video is only available online, you need an internet Connection to watch it";
         public static string NoLoginDetails = "Please enter all required login details";
     }
 }

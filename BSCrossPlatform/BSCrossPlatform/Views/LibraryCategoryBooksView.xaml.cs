@@ -19,18 +19,17 @@ namespace BSCrossPlatform.Views
             var book = ((ListView)sender).SelectedItem as BookModel;
             if (book == null)
                 return;
-            else 
+            else
             {
                 if (await DependencyService.Get<Interfaces.ITask>().FileExists(book.file_url))
                     await Navigation.PushAsync(new PDFReader(book));
                 else
                 {
-                    var option = await DisplayAlert("Question?", "Would you like to download the file", "Download", "View");
                     if (DependencyService.Get<Interfaces.ITask>().IsInternetConnectionAvailable())
                     {
+                        var option = await DisplayAlert(Core.Message.File_Access_Header, Core.Message.File_Access_Message, Core.Message.Yes, Core.Message.No);
                         if (option)
                         {
-                            //downloadProgress.IsVisible = true;
                             bool fullydownloaded = false;
                             IsBusy = true;
                             try
@@ -66,12 +65,12 @@ namespace BSCrossPlatform.Views
                         }
                         else
                         {
-                            await Navigation.PushAsync(new BrowserView(Core.Constant.BaseUri + book.file_url));
+                            await DisplayAlert(Core.Message.File_Access_Header, Core.Message.Offline_File_Unavailable, Core.Message.Ok);
                         }
                     }
                     else
                     {
-                        await DisplayAlert(Core.Message.Connection_Error_Header, Core.Message.Connection_Error, Core.Message.Ok);
+                        await DisplayAlert(Core.Message.File_Access_Header, Core.Message.Offline_File_Unavailable, Core.Message.Ok);
                     }
                 }
             }

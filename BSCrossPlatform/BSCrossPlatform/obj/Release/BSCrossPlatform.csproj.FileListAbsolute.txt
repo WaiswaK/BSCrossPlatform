@@ -28,5 +28,33 @@ D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Release
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.Views.AssignmentAttachView.xaml.g.cs
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.dll.mdb
 D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\bin\Release\BSCrossPlatform.dll.mdb
-D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.dll.mdb
-D:\OneDrive\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform\bin\Release\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Release\BSCrossPlatform.dll
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Release\BSCrossPlatform.pdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Release\Newtonsoft.Json.dll
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Release\SQLite.Net.Async.dll
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Release\SQLite.Net.dll
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Release\Xamarin.Forms.Core.dll
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Release\Xamarin.Forms.Platform.dll
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Release\Xamarin.Forms.Xaml.dll
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Release\Newtonsoft.Json.xml
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Release\Xamarin.Forms.Core.xml
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Release\Xamarin.Forms.Xaml.xml
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.csprojResolveAssemblyReference.cache
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.Views.AssignmentView.xaml.g.cs
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.Views.LibraryCategoryBooksView.xaml.g.cs
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.Views.LibraryView.xaml.g.cs
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.Views.LoginView.xaml.g.cs
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.Views.PDFReader.xaml.g.cs
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.Views.PlayView.xaml.g.cs
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.Views.StudentView.xaml.g.cs
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.Views.SubjectsView.xaml.g.cs
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.Views.SubjectView.xaml.g.cs
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.Views.TopicsView.xaml.g.cs
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.Views.TopicView.xaml.g.cs
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.Views.BrowserView.xaml.g.cs
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.dll
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.pdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Release\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Release\BSCrossPlatform.dll.mdb

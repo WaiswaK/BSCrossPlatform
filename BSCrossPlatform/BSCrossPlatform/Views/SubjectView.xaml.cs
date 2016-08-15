@@ -27,7 +27,15 @@ namespace BSCrossPlatform.Views
             var videofile = ((ListView)sender).SelectedItem as VideoModel;
             if (videofile == null)
                 return;
-            else await Navigation.PushAsync(new PlayView(videofile));
+            else
+            {
+                if (DependencyService.Get<Interfaces.ITask>().IsInternetConnectionAvailable())
+                    await Navigation.PushAsync(new PlayView(videofile));
+                else
+                {
+                    await DisplayAlert(Core.Message.File_Access_Header, Core.Message.Offline_Video_Unavailable, Core.Message.Ok);
+                }
+            }
         }
         async void Handle_TopicSelected(object sender, SelectedItemChangedEventArgs e)
         {
@@ -47,9 +55,10 @@ namespace BSCrossPlatform.Views
                     await Navigation.PushAsync(new PDFReader(file));
                 else
                 {
-                    var option = await DisplayAlert("Question?", "Would you like to download the file", "Download", "View");
+                    ;
                     if (DependencyService.Get<Interfaces.ITask>().IsInternetConnectionAvailable())
                     {
+                        var option = await DisplayAlert(Core.Message.File_Access_Header, Core.Message.File_Access_Message, Core.Message.Yes, Core.Message.No);
                         if (option)
                         {
                             bool fullydownloaded = false;
@@ -85,12 +94,12 @@ namespace BSCrossPlatform.Views
                         }
                         else
                         {
-                            await Navigation.PushAsync(new BrowserView(Core.Constant.BaseUri + file.FilePath));
+                            await DisplayAlert(Core.Message.File_Access_Header, Core.Message.Offline_File_Unavailable, Core.Message.Ok);
                         }
                     }
                     else
                     {
-                        await DisplayAlert(Core.Message.Connection_Error_Header, Core.Message.Connection_Error, Core.Message.Ok);
+                        await DisplayAlert(Core.Message.File_Access_Header, Core.Message.Offline_File_Unavailable, Core.Message.Ok);
                     }
                 }
             }
@@ -102,7 +111,8 @@ namespace BSCrossPlatform.Views
                 return;
             else
             {
-                string content = Core.WebViewContentHelper.WrapHtml(assignment.description, 100, 100);
+                string new_notes = await Core.NotesTask.Notes_loader(assignment);
+                string content = Core.WebViewContentHelper.WrapHtml(new_notes, 100, 100);
                 await Navigation.PushAsync(new AssignmentView(assignment, content));
             }
         }

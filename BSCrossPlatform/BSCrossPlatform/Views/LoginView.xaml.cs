@@ -45,7 +45,7 @@ namespace BSCrossPlatform.Views
         {
             Navigation.PushAsync(new BrowserView(Core.Constant.PasswordUri));
         }
-        public async void Login()
+        private async void Login()
         {
             await CommonTask.InitializeDatabase();
             try
