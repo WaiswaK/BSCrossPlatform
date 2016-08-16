@@ -1,0 +1,5 @@
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.iOS\obj\iPhone\Debug\optimized\
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.iOS\obj\iPhone\Debug\BSCrossPlatform.iOS.csprojResolveAssemblyReference.cache

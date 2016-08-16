@@ -1,0 +1,2 @@
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Windows\BSCrossPlatform.Windows.csproj;x86
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.csproj;neutral

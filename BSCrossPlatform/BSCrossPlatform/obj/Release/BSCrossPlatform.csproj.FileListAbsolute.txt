@@ -26,3 +26,7 @@ D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Rele
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.pdb
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.dll.mdb
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Release\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Release\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Release\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Release\BSCrossPlatform.dll.mdb

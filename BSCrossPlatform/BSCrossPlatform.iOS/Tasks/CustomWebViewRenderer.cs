@@ -7,13 +7,13 @@ using Foundation;
 using UIKit;
 using Xamarin.Forms.Platform.iOS;
 
-[assembly: ExportRenderer(typeof(CustomWebView), typeof(CustomWebViewRenderer))]
+[assembly: ExportRenderer(typeof(BSCrossPlatform.Views.CustomWebView), typeof(CustomWebViewRenderer))]
 namespace BSCrossPlatform.iOS.Tasks
 {
-    public class CustomWebViewRenderer : ViewRenderer<CustomWebView, UIWebView>
+    public class CustomWebViewRenderer : ViewRenderer<Views.CustomWebView, UIWebView>
     {
         string documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-        protected override void OnElementChanged(ElementChangedEventArgs<CustomWebView> e)
+        protected override void OnElementChanged(ElementChangedEventArgs<Views.CustomWebView> e)
         {
             base.OnElementChanged(e);
 
@@ -27,7 +27,7 @@ namespace BSCrossPlatform.iOS.Tasks
             }
             if (e.NewElement != null)
             {
-                var customWebView = Element as CustomWebView;
+                var customWebView = Element as Views.CustomWebView;
                 string fileName = Path.Combine(NSBundle.MainBundle.BundlePath, string.Format(documentsPath + "{0}", WebUtility.UrlEncode(customWebView.Uri)));
                 Control.LoadRequest(new NSUrlRequest(new NSUrl(fileName, false)));
                 Control.ScalesPageToFit = true;

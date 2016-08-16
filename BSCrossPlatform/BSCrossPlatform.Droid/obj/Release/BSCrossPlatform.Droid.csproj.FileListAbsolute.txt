@@ -17,6 +17,7 @@ D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\bi
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\bin\Release\Xamarin.Forms.Xaml.dll
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\bin\Release\Newtonsoft.Json.dll
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\bin\Release\BSCrossPlatform.pdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\bin\Release\BSCrossPlatform.dll.mdb
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\bin\Release\Xamarin.Forms.Core.xml
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\bin\Release\Xamarin.Forms.Xaml.xml
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\bin\Release\Newtonsoft.Json.xml
@@ -35,5 +36,16 @@ D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\ob
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\obj\Release\res\drawable\icon.png
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\obj\Release\R.cs.flag
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\obj\Release\uploadflags.txt
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\obj\Release\android\assets\BrainShare.Droid.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\obj\Release\android\assets\BSCrossPlatform.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\obj\Release\android\assets\Java.Interop.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\obj\Release\android\assets\Mono.Android.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\obj\Release\android\assets\mscorlib.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\obj\Release\android\assets\System.Core.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\obj\Release\android\assets\System.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\obj\Release\android\assets\System.Net.Http.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\obj\Release\android\assets\System.Runtime.Serialization.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\obj\Release\android\assets\System.ServiceModel.Internals.dll.mdb
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\obj\Release\android\assets\System.Xml.dll.mdb
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\obj\Release\BrainShare.Droid.dll.mdb
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.Droid\bin\Release\BrainShare.Droid.dll.mdb

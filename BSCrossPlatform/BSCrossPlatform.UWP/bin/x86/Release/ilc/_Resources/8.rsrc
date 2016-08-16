@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="BSCrossPlatform.Views.SubjectView"            
+            Title="{ Binding SubjectName }">
+
+  <TabbedPage.Children>
+    
+  <ContentPage Title="Featured Topics" x:Name="Topics" BackgroundImage ="background.jpg">
+        <ListView RowHeight ="80"
+                    ItemsSource ="{Binding TopicList}"
+                    ItemTapped ="Handle_ItemTapped"
+                    ItemSelected ="Handle_TopicSelected"
+      >
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ImageCell ImageSource="course.png" Text="{ Binding folder_name }" TextColor="Black"/>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </ContentPage>
+    
+  <ContentPage Title="Featured Files" x:Name ="Files" BackgroundImage ="background.jpg">
+        <ListView RowHeight ="80"
+                      ItemsSource ="{Binding FileList}"
+                      ItemTapped ="Handle_ItemTapped"
+                      ItemSelected ="Handle_FileSelected"
+      >
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ImageCell ImageSource="pdf.gif" Text="{ Binding FileName }" TextColor="Black"/>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </ContentPage>
+    
+  <ContentPage Title="Featured Assignments" x:Name ="Assignments" BackgroundImage ="background.jpg">
+        <ListView RowHeight ="80"
+                      ItemsSource ="{Binding AssignmentList}"
+                      ItemTapped ="Handle_ItemTapped"
+                      ItemSelected ="Handle_AssignmentSelected"
+      >
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ImageCell ImageSource="classnotes.png" Text="{ Binding title }"
+                         Detail="{Binding teacher}" TextColor="Black"/>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </ContentPage>
+  
+  <ContentPage Title="Featured Videos" x:Name ="Videos" BackgroundImage ="background.jpg">
+        <ListView RowHeight ="80"
+                      ItemsSource ="{Binding VideosList}"
+                      ItemTapped ="Handle_ItemTapped"
+                      ItemSelected ="Handle_VideoSelected"
+      >
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ImageCell ImageSource="Video.png" Text="{ Binding FileName }" TextColor="Black"/>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </ContentPage>
+  
+  </TabbedPage.Children>
+ 
+</TabbedPage>

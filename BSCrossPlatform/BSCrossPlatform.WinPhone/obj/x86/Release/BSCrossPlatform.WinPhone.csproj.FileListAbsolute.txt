@@ -27,11 +27,11 @@ D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.WinPhone
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.WinPhone\obj\x86\Release\MainPage.g.i.cs
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.WinPhone\obj\x86\Release\MainPage.g.cs
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.WinPhone\obj\x86\Release\XamlTypeInfo.g.cs
-D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.WinPhone\obj\x86\Release\XamlSaveStateFile.xml
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.WinPhone\obj\x86\Release\App.xaml
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.WinPhone\obj\x86\Release\MainPage.xaml
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.WinPhone\obj\x86\Release\App.xbf
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.WinPhone\obj\x86\Release\MainPage.xbf
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.WinPhone\obj\x86\Release\XamlSaveStateFile.xml
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.WinPhone\obj\x86\Release\BSCrossPlatform.WinPhone.exe
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.WinPhone\obj\x86\Release\BSCrossPlatform.WinPhone.pdb
 D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.WinPhone\obj\x86\Release\BSCrossPlatform.WinPhone.csproj.GenerateResource.Cache

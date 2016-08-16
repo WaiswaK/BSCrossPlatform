@@ -53,8 +53,9 @@ namespace BSCrossPlatform.Droid.Tasks
         }
         public async Task<string> LocalBase64(string image_path, string fileformat)
         {
-            if (!File.Exists(image_path)) return null;
-            var bytes = File.ReadAllBytes(image_path);
+            string image = Core.ImageTask.imageName(image_path + fileformat);
+            if (!File.Exists(image)) return null;
+            var bytes = File.ReadAllBytes(image);
             return Convert.ToBase64String(bytes);
         }
         public bool IsInternetConnectionAvailable()

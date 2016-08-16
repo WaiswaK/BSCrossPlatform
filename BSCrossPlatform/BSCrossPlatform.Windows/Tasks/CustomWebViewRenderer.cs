@@ -1,10 +1,10 @@
-﻿using BSCrossPlatform.Core;
-using BSCrossPlatform.Windows.Tasks;
+﻿using BSCrossPlatform.Windows.Tasks;
 using System;
 using Xamarin.Forms.Platform.WinRT;
 using System.Net;
 using Xamarin.Forms;
 using Windows.Storage;
+using BSCrossPlatform.Views;
 
 [assembly: ExportRenderer(typeof(CustomWebView), typeof(CustomWebViewRenderer))]
 namespace BSCrossPlatform.Windows.Tasks

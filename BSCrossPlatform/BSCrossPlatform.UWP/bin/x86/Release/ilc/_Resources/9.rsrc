@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BSCrossPlatform.Views.TopicsView"
+             BackgroundImage ="background.jpg">
+  <ContentPage.Content>
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="100"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <StackLayout Orientation="Horizontal" Grid.Row="0">
+        <Label Text= "{Binding TopicTitle}" HorizontalTextAlignment="Start"
+               FontSize="20" VerticalTextAlignment="Center" TextColor="Green" LineBreakMode="WordWrap"/>
+      </StackLayout>
+      <StackLayout Grid.Row="1">
+        <ListView RowHeight ="80"
+                ItemsSource ="{Binding TopicList}"
+                ItemTapped ="Handle_ItemTapped"
+                ItemSelected ="Handle_ItemSelected"
+      >
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ImageCell ImageSource="classnotes.png" Text="{ Binding TopicTitle }" TextColor="Black"/>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </StackLayout>
+    </Grid>
+  </ContentPage.Content>
+</ContentPage>

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Net;
 using Xamarin.Forms;
-using BSCrossPlatform.Core;
 using BSCrossPlatform.UWP.Tasks;
 using Xamarin.Forms.Platform.UWP;
+using BSCrossPlatform.Views;
 
 [assembly: ExportRenderer(typeof(CustomWebView), typeof(CustomWebViewRenderer))]
 namespace BSCrossPlatform.UWP.Tasks
