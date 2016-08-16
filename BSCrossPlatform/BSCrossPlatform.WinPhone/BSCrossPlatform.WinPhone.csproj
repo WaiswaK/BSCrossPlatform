@@ -100,6 +100,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\BadgeLogo.scale-100.png" />
+    <Content Include="Assets\BadgeLogo.scale-140.png" />
+    <Content Include="Assets\BadgeLogo.scale-240.png" />
     <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\pdfjs\build\pdf.js" />
     <Content Include="Assets\pdfjs\build\pdf.worker.js" />
@@ -188,13 +190,14 @@
     <Content Include="Assets\pdfjs\web\viewer.html" />
     <Content Include="Assets\pdfjs\web\viewer.js" />
     <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SmallLogo.scale-140.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\Square71x71Logo.scale-100.png" />
+    <Content Include="Assets\Square71x71Logo.scale-140.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-140.png" />
     <Content Include="Assets\WideLogo.scale-100.png" />
     <Content Include="background.jpg" />
-    <Content Include="Assets\Icons\library.png" />
-    <Content Include="Assets\Icons\units.png" />
     <Content Include="Assets\library.png" />
     <Content Include="Assets\Logo.scale-240.png" />
     <Content Include="Assets\SmallLogo.scale-240.png" />

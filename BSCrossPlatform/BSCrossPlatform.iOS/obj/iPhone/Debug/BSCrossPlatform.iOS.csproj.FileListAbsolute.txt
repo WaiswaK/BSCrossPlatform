@@ -1,2 +1,0 @@
-C:\Users\Kenneth\OneDrive\Documents\Visual Studio 2015\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
-C:\Users\Kenneth\OneDrive\Documents\Visual Studio 2015\Projects\BSCrossPlatform\BSCrossPlatform\BSCrossPlatform.iOS\obj\iPhone\Debug\optimized\

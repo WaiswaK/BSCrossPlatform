@@ -14,7 +14,6 @@ namespace BSCrossPlatform.Droid.Tasks
     {
         public static string AppFolderPath()
         {
-            //private static string StorageFolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);  
             string appFolderName = "BrainShare";
             string externalStorageDirectory = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath;
             if (!Directory.Exists(Path.Combine(externalStorageDirectory, appFolderName)))
