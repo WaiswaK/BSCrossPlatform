@@ -1,0 +1,11 @@
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.UWP\obj\x86\Release\BSCrossPlatform.UWP.csprojResolveAssemblyReference.cache
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.UWP\obj\x86\Release\App.g.i.cs
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.UWP\obj\x86\Release\App.g.cs
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.UWP\obj\x86\Release\MainPage.g.i.cs
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.UWP\obj\x86\Release\MainPage.g.cs
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.UWP\obj\x86\Release\XamlTypeInfo.g.cs
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.UWP\obj\x86\Release\App.xaml
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.UWP\obj\x86\Release\MainPage.xaml
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.UWP\obj\x86\Release\App.xbf
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.UWP\obj\x86\Release\MainPage.xbf
+D:\OneDrive\Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform.UWP\obj\x86\Release\XamlSaveStateFile.xml
