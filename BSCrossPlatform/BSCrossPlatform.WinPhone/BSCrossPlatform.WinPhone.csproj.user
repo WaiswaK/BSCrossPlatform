@@ -4,7 +4,7 @@
     <DeviceId>A6BAF594-9315-40C3-AD16-F5B8A425A7AB</DeviceId>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
-    <DeviceId>98CD6FA8-9114-4179-ACA3-38E5D23C77EE</DeviceId>
+    <DeviceId>A6BAF594-9315-40C3-AD16-F5B8A425A7AB</DeviceId>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <DeviceId>A6BAF594-9315-40C3-AD16-F5B8A425A7AB</DeviceId>

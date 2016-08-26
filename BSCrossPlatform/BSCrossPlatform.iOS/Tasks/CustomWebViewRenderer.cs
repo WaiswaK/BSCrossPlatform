@@ -1,5 +1,4 @@
-﻿using BSCrossPlatform.Core;
-using BSCrossPlatform.iOS.Tasks;
+﻿using BSCrossPlatform.iOS.Tasks;
 using Xamarin.Forms;
 using System.IO;
 using System.Net;

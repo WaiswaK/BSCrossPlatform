@@ -7,7 +7,8 @@ namespace BSCrossPlatform
     {
         public App()
         {
-            MainPage = new NavigationPage(new Views.LoginView());
+            MainPage = new NavigationPage(new Views.WelcomeView());
+            //MainPage = new NavigationPage(new Views.LoginView());
             //MainPage = new Views.LoginView();          
         }
 

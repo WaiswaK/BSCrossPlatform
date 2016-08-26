@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BSCrossPlatform.Views.WelcomeView">
+  <ContentPage.Content>
+    <Grid BackgroundColor="#FF3530A2">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="100"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <StackLayout Orientation="Horizontal" Grid.Row="0" Padding="15,20,15,0">
+        <Image Source="logo.png" />
+        <Label Text= "BrainShare" HorizontalTextAlignment="Start" FontSize="50" 
+               VerticalTextAlignment="Center" TextColor="White"
+               LineBreakMode="WordWrap"/>
+      </StackLayout>
+      <StackLayout VerticalOptions="Center" Grid.Row="1" Padding="15,20,15,0">
+        <Button x:Name ="pastpapers_btn" 
+                Text="Find past papers" 
+                BorderColor="#FF3530A2"
+                BackgroundColor="Green"
+                />
+        <Button x:Name ="quiz_btn" Text="Revision Quiz"/>
+        
+        <Button x:Name ="exam_btn" Text="Online Exams" />
+        
+        <Button x:Name ="tutors_btn" 
+                Text="Find a tutor" 
+                BorderColor="#FF3530A2"
+                BackgroundColor="Purple"/>
+        
+        <Button x:Name ="school_btn" 
+                Text="School Portal" 
+                BorderColor="#FF3530A2"
+                BackgroundColor="Olive" 
+                Clicked="OnPortalClick"/>
+        
+        <Label x:Name="LoadingMsg" IsVisible="False" HorizontalTextAlignment="Center"/>
+      </StackLayout>
+    </Grid>
+  </ContentPage.Content>
+</ContentPage>
