@@ -25,3 +25,8 @@ D:\Current Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Debug
 D:\Current Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Debug\BSCrossPlatform.Views.WelcomeView.xaml.g.cs
 D:\Current Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Debug\BSCrossPlatform.dll
 D:\Current Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Debug\BSCrossPlatform.pdb
+D:\Current Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Debug\BSCrossPlatform.Views.SamplePapersView.xaml.g.cs
+D:\Current Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Debug\BSCrossPlatform.dll.mdb
+D:\Current Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Debug\BSCrossPlatform.dll.mdb
+D:\Current Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\obj\Debug\BSCrossPlatform.dll.mdb
+D:\Current Projects\BrainShare 2.0.0.0\BSCrossPlatform\BSCrossPlatform\bin\Debug\BSCrossPlatform.dll.mdb

@@ -1,0 +1,66 @@
+[
+  {
+    "_id": "57bffb386f5ad872c1079263",
+    "title": "S.4 Biology",
+    "category": "Biology",
+    "school": "Mt. St. Mary's Namagunga",
+    "pastpaper_file": "asdasd.pdf",
+    "markingguide_file": "qwrwerewrwer.pdf"
+  },
+  {
+    "_id": "57bffb380601acdb8e579165",
+    "title": "S.3 Chemistry",
+    "category": "Chemistry",
+    "school": "Ntare School",
+    "pastpaper_file": "qeqweqeqwewq.pdf",
+    "markingguide_file": "asasdasdwewrwevfdfv.pdf"
+  },
+  {
+    "_id": "57bffb38b638c926ccb839ab",
+    "title": "S.1 Maths",
+    "category": "Maths",
+    "school": "Makerere College School",
+    "pastpaper_file": "werwesdfsdf.pdf",
+    "markingguide_file": "qweasdcv.pdf"
+  },
+  {
+    "_id": "57bffb38bc5465fd14e8f1ce",
+    "title": "P.5 CRE",
+    "category": "Primary CRE",
+    "school": "Mengo Primary School",
+    "pastpaper_file": "adasdasdasdas.pdf",
+    "markingguide_file": "wqewqewqeqwewqe.pdf"
+  },
+  {
+    "_id": "57bffb38b638c926ccb839ab",
+    "title": "S.1 Maths",
+    "category": "Maths",
+    "school": "Makerere College School",
+    "pastpaper_file": "werw345esdfsdf.pdf",
+    "markingguide_file": "qwea345sdcv.pdf"
+  },
+  {
+    "_id": "57bffb38bc5465fd14e8f1ce",
+    "title": "P.5 CRE",
+    "category": "Primary CRE",
+    "school": "Mengo Primary School",
+    "pastpaper_file": "adasda345sdasdas.pdf",
+    "markingguide_file": "wqewq35ewqeqwewqe.pdf"
+  },
+  {
+    "_id": "57bffb38b638c926ccb839ab",
+    "title": "S.1 Maths",
+    "category": "Maths",
+    "school": "Makerere College School",
+    "pastpaper_file": "werwesd345fsdf.pdf",
+    "markingguide_file": "qwe345asdcv.pdf"
+  },
+  {
+    "_id": "57bffb38bc5465fd14e8f1ce",
+    "title": "P.5 CRE",
+    "category": "Primary CRE",
+    "school": "Mengo Primary School",
+    "pastpaper_file": "adasdas345dasdas.pdf",
+    "markingguide_file": "wqewq35ewqeqwewqe.pdf"
+  }
+]

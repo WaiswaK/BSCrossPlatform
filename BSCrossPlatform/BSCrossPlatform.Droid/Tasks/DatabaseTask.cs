@@ -27,7 +27,7 @@ namespace BSCrossPlatform.Droid.Tasks
             if (await LocalDatabaseNotPresent(Core.Constant.dbName))
             {
                 using (var db = GetConnection())
-                {
+                {                    
                     db.CreateTable<Database.Subject>();
                     db.CreateTable<Database.Topic>();
                     db.CreateTable<Database.Assignment>();
@@ -37,6 +37,9 @@ namespace BSCrossPlatform.Droid.Tasks
                     db.CreateTable<Database.School>();
                     db.CreateTable<Database.Book>();
                     db.CreateTable<Database.log>();
+
+                    db.CreateTable<Database.Pastpaper>();
+                    db.CreateTable<Database.BSOUser>();
                 };
             }
             else

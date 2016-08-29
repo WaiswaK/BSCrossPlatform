@@ -622,3 +622,5 @@ namespace BSCrossPlatform.WinPhone.BSCrossPlatform_WinPhone_XamlTypeInfo
 }
 
 
+
+

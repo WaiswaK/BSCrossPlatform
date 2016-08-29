@@ -34,6 +34,9 @@ namespace BSCrossPlatform.iOS.Database
                     db.CreateTable<BSCrossPlatform.Database.School>();
                     db.CreateTable<BSCrossPlatform.Database.Book>();
                     db.CreateTable<BSCrossPlatform.Database.log>();
+
+                    db.CreateTable<Database.Pastpaper>();
+                    db.CreateTable<Database.BSOUser>();
                 };
             }
             else

@@ -31,7 +31,7 @@ namespace BSCrossPlatform.ViewModels
             get { return _studentContent; }
             set { _studentContent = value; }
         }
-        public List<ModulesModel> Final_List(List<SubjectModel> subjects, List<LibCategoryModel> categories)
+        private List<ModulesModel> Final_List(List<SubjectModel> subjects, List<LibCategoryModel> categories)
         {
             ModulesModel subject_module = new ModulesModel("Subjects / Units", "units.png", subjects);
             ModulesModel library_module = new ModulesModel("Library (eBooks)", "library.png", categories);

@@ -34,6 +34,9 @@ namespace BSCrossPlatform.WinPhone.Tasks
                     db.CreateTable<Database.School>();
                     db.CreateTable<Database.Book>();
                     db.CreateTable<Database.log>();
+
+                    db.CreateTable<Database.Pastpaper>();
+                    db.CreateTable<Database.BSOUser>();
                 };
             }
             else

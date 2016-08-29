@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BSCrossPlatform.Views.SamplePapersView"
+             BackgroundImage ="background.jpg">
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="100"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <StackLayout Orientation="Horizontal" Grid.Row="0">
+        <Image Source="logo.png" />
+        <Label Text= "Past Papers" HorizontalTextAlignment="Start"
+               FontSize="20" VerticalTextAlignment="Center" TextColor="Green"
+               LineBreakMode="WordWrap"/>
+      </StackLayout>
+      <StackLayout Grid.Row="1">
+        <ListView RowHeight ="80"
+                ItemsSource ="{ Binding PastPapers }"
+                ItemTapped ="Handle_ItemTapped"
+                ItemSelected ="Handle_ItemSelected">
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ImageCell ImageSource="pdf.gif" 
+                         Text="{Binding title}" TextColor="Black" 
+                         Detail="{Binding school}" DetailColor="Blue"/>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </StackLayout>
+    </Grid>
+</ContentPage>

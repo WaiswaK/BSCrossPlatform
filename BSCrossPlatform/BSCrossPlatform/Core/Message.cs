@@ -25,5 +25,11 @@
         public static string Offline_File_Unavailable = "This file is only available online, you need an internet Connection to view it";
         public static string Offline_Video_Unavailable = "This video is only available online, you need an internet Connection to watch it";
         public static string NoLoginDetails = "Please enter all required login details";
+        public static string OnlineAccess_Header = "BrainShare Online";
+        public static string OnlineAccess = "Login to Access more Files or view this one";
+        public static string View = "View";
+        public static string Pastpaper_Header = "Past Paper";
+        public static string Pastpaper = "View Past paper or Marking Guide";
+        public static string Marking_Guide = "Marking Guide";
     }
 }

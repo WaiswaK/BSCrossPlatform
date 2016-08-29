@@ -26,5 +26,7 @@
         public static string PrivacyPolicyUri = http + "learn." + Base + "/privacy_policy";
         public static string RegisterUri = BaseUri + "/pages/register";
         public static string PasswordUri = BaseUri + "/users/password/new";
+        public static string PastPaper = "Past Paper";
+        public static string MarkingGuide = "Marking Guide";
     }
 }

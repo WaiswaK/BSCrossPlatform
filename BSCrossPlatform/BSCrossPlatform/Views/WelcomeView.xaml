@@ -2,10 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BSCrossPlatform.Views.WelcomeView">
-  <ContentPage.Content>
     <Grid BackgroundColor="#FF3530A2">
       <Grid.RowDefinitions>
-        <RowDefinition Height="100"/>
+        <RowDefinition Height="Auto"/>
         <RowDefinition Height="*"/>
       </Grid.RowDefinitions>
       <StackLayout Orientation="Horizontal" Grid.Row="0" Padding="15,20,15,0">
@@ -19,6 +18,7 @@
                 Text="Find past papers" 
                 BorderColor="#FF3530A2"
                 BackgroundColor="Green"
+                Clicked="OnPastClick"
                 />
         <Button x:Name ="quiz_btn" Text="Revision Quiz"/>
         
@@ -38,5 +38,4 @@
         <Label x:Name="LoadingMsg" IsVisible="False" HorizontalTextAlignment="Center"/>
       </StackLayout>
     </Grid>
-  </ContentPage.Content>
 </ContentPage>

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
@@ -16,7 +12,12 @@ namespace BSCrossPlatform.Views
         }
         async void OnPortalClick(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new LoginView());
+            await Navigation.PushAsync(new LoginView(true));
         }
+        async void OnPastClick(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SamplePapersView(Core.JSONTask.GetPastPapers(Core.JSONTask.SampleJsonArray())));
+        }
+        
     }
 }

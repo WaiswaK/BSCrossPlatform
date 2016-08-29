@@ -4,11 +4,14 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
+using System.Reflection;
+
 
 namespace BSCrossPlatform.Core
 {
     class JSONTask
     {
+        #region BrainShare JSONs
         private static string Teacher(Newtonsoft.Json.Linq.JObject obj)
         {
             string teacher_names = string.Empty;
@@ -411,7 +414,42 @@ namespace BSCrossPlatform.Core
                 
             }
             return Current;
-        }     
+        }
+        #endregion
+        #endregion
+
+        #region BrainShareOnline JSONs
+        public static Newtonsoft.Json.Linq.JArray SampleJsonArray()
+        {
+            Newtonsoft.Json.Linq.JArray pastpapers = new Newtonsoft.Json.Linq.JArray();
+            var assembly = typeof(App).GetTypeInfo().Assembly;
+            System.IO.Stream stream = assembly.GetManifestResourceStream("BSCrossPlatform.Repository.samplepapers.json");
+            using (var reader = new System.IO.StreamReader(stream))
+            {
+                var json = reader.ReadToEnd();
+                pastpapers = Newtonsoft.Json.Linq.JArray.Parse(json);
+            }
+            return pastpapers;
+        }
+        public static List<PastPaperModel> GetPastPapers(Newtonsoft.Json.Linq.JArray PastPaperArray)
+        {          
+            List<PastPaperModel> pastpapers = new List<PastPaperModel>();
+            foreach (var item in PastPaperArray)
+            {
+                PastPaperModel pastpaper = new PastPaperModel();
+                var obj = item as Newtonsoft.Json.Linq.JObject;
+                pastpaper._id = obj.Value<string>("_id");
+                pastpaper.title = obj.Value<string>("title");
+                pastpaper.category = obj.Value<string>("category");
+                pastpaper.school = obj.Value<string>("school");
+                pastpaper.pastpaper_file = obj.Value<string>("pastpaper_file");
+                pastpaper.markingguide_file = obj.Value<string>("markingguide_file");
+                pastpapers.Add(pastpaper);
+            }
+            return pastpapers;
+        }
+
+
         #endregion
     }
 }

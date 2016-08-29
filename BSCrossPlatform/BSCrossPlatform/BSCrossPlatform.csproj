@@ -50,6 +50,7 @@
     <Compile Include="Database\Assignment.cs" />
     <Compile Include="Database\Attachment.cs" />
     <Compile Include="Database\Book.cs" />
+    <Compile Include="Database\BSOUser.cs" />
     <Compile Include="Database\log.cs" />
     <Compile Include="Database\Pastpaper.cs" />
     <Compile Include="Database\School.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\AssignmentViewModel.cs" />
     <Compile Include="ViewModels\LibraryCategoryBooksViewModel.cs" />
+    <Compile Include="ViewModels\PastPapersViewModel.cs" />
     <Compile Include="ViewModels\PDFReaderViewModel.cs" />
     <Compile Include="ViewModels\PlayViewModel.cs" />
     <Compile Include="ViewModels\StudentViewModel.cs" />
@@ -93,12 +95,6 @@
       <DependentUpon>BrowserView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\CustomWebView.cs" />
-    <Compile Include="Views\ExamsView.xaml.cs">
-      <DependentUpon>ExamsView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ExamView.xaml.cs">
-      <DependentUpon>ExamView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\LibraryCategoryBooksView.xaml.cs">
       <DependentUpon>LibraryCategoryBooksView.xaml</DependentUpon>
     </Compile>
@@ -108,23 +104,14 @@
     <Compile Include="Views\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\PastPaparsView.xaml.cs">
-      <DependentUpon>PastPaparsView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\PastPaperView.xaml.cs">
-      <DependentUpon>PastPaperView.xaml</DependentUpon>
+    <Compile Include="Views\SamplePapersView.xaml.cs">
+      <DependentUpon>SamplePapersView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\PDFReader.xaml.cs">
       <DependentUpon>PDFReader.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\PlayView.xaml.cs">
       <DependentUpon>PlayView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\QuizView.xaml.cs">
-      <DependentUpon>QuizView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\RevisionQuizView.xaml.cs">
-      <DependentUpon>RevisionQuizView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\StudentView.xaml.cs">
       <DependentUpon>StudentView.xaml</DependentUpon>
@@ -179,6 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <EmbeddedResource Include="Repository\samplepapers.json" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\AssignmentView.xaml">
@@ -241,37 +229,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\PastPaparsView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\ExamsView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\QuizView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\PastPaperView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\RevisionQuizView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\ExamView.xaml">
+    <EmbeddedResource Include="Views\SamplePapersView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

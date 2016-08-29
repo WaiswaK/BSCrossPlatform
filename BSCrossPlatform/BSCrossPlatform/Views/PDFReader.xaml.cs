@@ -16,5 +16,10 @@ namespace BSCrossPlatform.Views
             InitializeComponent();
             BindingContext = new ViewModels.PDFReaderViewModel(book);
         }
+        public PDFReader(PastPaperModel pastpaper, string selection)
+        {
+            InitializeComponent();
+            BindingContext = new ViewModels.PDFReaderViewModel(pastpaper, selection);
+        }
     }
 }

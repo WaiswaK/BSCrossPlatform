@@ -19,5 +19,12 @@ namespace BSCrossPlatform.ViewModels
         {
             PDFPath = Core.CommonTask.PDFFileFromPath(book.file_url);
         }
+        public PDFReaderViewModel(PastPaperModel pastpaper, string selection)
+        {
+            if (selection == Core.Constant.PastPaper)
+                PDFPath = pastpaper.pastpaper_file;
+            if (selection == Core.Constant.MarkingGuide)
+                PDFPath = pastpaper.markingguide_file;
+        }
     }
 }

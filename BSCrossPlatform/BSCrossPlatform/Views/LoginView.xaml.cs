@@ -11,9 +11,11 @@ namespace BSCrossPlatform.Views
 {
     public partial class LoginView : ContentPage
     {
-        public LoginView()
+        bool portal;
+        public LoginView(bool Portal)
         {
             InitializeComponent();
+            portal = Portal;
         }
         void OnLoginButtonClicked(object sender, EventArgs e)
         {
@@ -27,7 +29,10 @@ namespace BSCrossPlatform.Views
             #endregion
             LoadingMsg.Text = Message.User_Validation;
             LoadingMsg.IsVisible = true;
-            Login();
+            if (portal)
+                SchoolPortalLogin();
+            else
+                OnlinePortalLogin();
         }
         void ReActivate_Controls()
         {
@@ -45,7 +50,7 @@ namespace BSCrossPlatform.Views
         {
             Navigation.PushAsync(new BrowserView(Core.Constant.PasswordUri));
         }
-        private async void Login()
+        private async void SchoolPortalLogin()
         {
             await CommonTask.InitializeDatabase();
             try
@@ -72,6 +77,35 @@ namespace BSCrossPlatform.Views
                 LoadingMsg.IsVisible = false;
                 IsBusy = false;
                 ReActivate_Controls();
+            }
+        }
+        private async void OnlinePortalLogin()
+        {
+            await CommonTask.InitializeDatabase();
+            try
+            {
+                if (email_tb.Text.Equals(null) || password_tb.Text.Equals(null))
+                {
+
+                }
+                else
+                {
+                    if (DependencyService.Get<Interfaces.ITask>().IsInternetConnectionAvailable())
+                    {
+                        //OnlineExperience();
+                    }
+                    else
+                    {
+                        //OfflineExperience();
+                    }
+                }
+            }
+            catch
+            {
+                //await DisplayAlert(Message.Login_Header, Message.NoLoginDetails, Message.Ok);
+                //LoadingMsg.IsVisible = false;
+                //IsBusy = false;
+                //ReActivate_Controls();
             }
         }
         private async void OfflineExperience()
